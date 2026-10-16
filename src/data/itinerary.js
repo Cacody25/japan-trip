@@ -252,7 +252,7 @@ export const days = [
     weekday: "Thursday",
     dateLabel: "Nov 5",
     city: "Tokyo",
-    title: "Ueno, Asakusa & Tokyo Skytree",
+    title: "Ueno, Asakusa & Skytree Town",
     blurb: "Temples, market food and knives — the classic east side.",
     accent: "#7FB069",
     stops: [
@@ -277,11 +277,17 @@ export const days = [
       },
       {
         time: "4:00 PM",
-        title: "Tokyo Skytree (Oshiage)",
-        kind: "sight",
-        detail: "Observatory views and the Solamachi shopping center.",
+        title: "Starbucks — Solamachi East 6F",
+        kind: "food",
+        detail:
+          "TOKYO SKYTREE TOWN · Solamachi, 1-1-2 Oshiage, Sumida-ku — East Yard 6F. Big window seats overlooking Skytree (and Sumida-limited Edo Kiriko iced coffee glasses).",
       },
-      { time: "6:00 PM", title: "Dinner in Asakusa", kind: "food", detail: "FUJI SAKU — sushi." },
+      {
+        time: "6:00 PM",
+        title: "Dinner — FUJI SAKU",
+        kind: "food",
+        detail: "Kinshichō — sushi at 4-5-6 Kinshi, Sumida-ku (Echigoya Bldg 1F), a few minutes from Kinshichō Station.",
+      },
       {
         time: "8:00 PM",
         title: "Evening stroll on the Sumida River",
