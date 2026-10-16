@@ -188,7 +188,7 @@ export const days = [
         title: "Shinjuku → Imperial Palace Loop walk",
         kind: "note",
         detail:
-          "15 stops from GLOU Higashi Shinjuku east to Chidorigafuchi. Everything is open by 11:00 AM — finish on the sidewalk path for a counter-clockwise Imperial Palace run.",
+          "15 stops from GLOU Higashi Shinjuku east to Chidorigafuchi. Everything is open by 11:00 AM — then a counter-clockwise 5 km Imperial Palace Loop with gate, bridge, and garden stops along the path.",
       },
       {
         time: "Stops 1–10",
@@ -217,6 +217,20 @@ export const days = [
           "Yasukuni Shrine — grand walkways and the 25m steel torii",
           "Tayasumon Gate (Kitanomaru Park) — oldest surviving wooden Edo Castle gate (1636)",
           "Chidorigafuchi Moat — scenic finish, then start the palace running loop",
+        ],
+      },
+      {
+        time: "Then",
+        title: "Imperial Palace Loop — 5 km counter-clockwise",
+        kind: "nature",
+        detail:
+          "Start at Chidorigafuchi. The western half is hilly with moat views; the eastern half is flat and wide, with Marunouchi skyscrapers against the castle walls. Look for these sights along the path:",
+        items: [
+          "Sakuradamon Gate — fortified early-1600s gate; walk through the wooden doors toward the main plaza (site of the 1860 assassination)",
+          "Nijubashi Bridge — postcard double bridge across the moat into the inner palace grounds",
+          "Statue of Kusunoki Masashige — bronze samurai on a rearing horse, just off the running path",
+          "Fushimi Yagura — white watchtower on the stone walls, visible from the Nijubashi area (moved from Fushimi Castle in Kyoto)",
+          "East Gardens · Tenshudai Ruins — free daytime entry (closed Mon & Fri); climb the Edo Castle donjon foundation",
         ],
       },
     ],
