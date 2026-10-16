@@ -91,6 +91,18 @@ export const days = [
         detail: "Follow up on the tattoo consultation or appointment, then keep the rest of the day open for city exploration.",
       },
       {
+        time: "Before dinner",
+        title: "Akasaka Station — Harry Potter Exit 3B",
+        kind: "sight",
+        detail:
+          "Tokyo Metro Chiyoda Line. Exit 3B has a wizarding-themed red staircase, Hogwarts-style portraits, magical creature shadows, a large Time-Turner sculpture, and Harry Potter theme music.",
+        items: [
+          "TBS Akasaka ACT Theater — Harry Potter and the Cursed Child",
+          "Official Harry Potter Café — just outside the station",
+          "Harry Potter Mahou Dokoro — official merchandise shop",
+        ],
+      },
+      {
         time: "Dinner",
         title: "Sakai Dinner",
         kind: "food",
