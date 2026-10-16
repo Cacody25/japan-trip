@@ -90,6 +90,13 @@ export const days = [
         kind: "note",
         detail: "Follow up on the tattoo consultation or appointment, then keep the rest of the day open for city exploration.",
       },
+      {
+        time: "Dinner",
+        title: "Sakai Dinner",
+        kind: "food",
+        detail:
+          "Tokyu Capitol Tower 1F, 2-10-3 Nagatachō, Chiyoda City, Tokyo — connected to Kokkai-gijomae Station.",
+      },
     ],
   },
   {

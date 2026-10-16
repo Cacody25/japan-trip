@@ -181,6 +181,16 @@ export const mapPlaces = [
     lng: 139.7448,
     note: "Weekend flea market in the Oi Racecourse parking lot — vintage, antiques and second-hand finds.",
   },
+  {
+    id: "sakai-dinner",
+    name: "Sakai Dinner",
+    area: "Nagatachō",
+    days: [3],
+    kind: "food",
+    lat: 35.674,
+    lng: 139.7411,
+    note: "Tokyu Capitol Tower 1F, 2-10-3 Nagatachō, Chiyoda City — connected to Kokkai-gijomae Station.",
+  },
 
   {
     id: "imperial-palace",
