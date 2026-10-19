@@ -72,6 +72,18 @@ export const foodSpots = [
     lat: 35.6889,
     lng: 139.69725,
   },
+  {
+    id: "shironeri",
+    name: "Shironeri (白練)",
+    area: "Gakugei-daigaku",
+    address: "TK Building, 3-7-17 Takaban, Meguro-ku, Tokyo (シロネリ)",
+    access: "3-minute walk from Gakugei-daigaku Station (Tokyu Toyoko Line)",
+    hours: "Mon–Fri 18:00–1:00 · Sat/Sun/holidays 15:00–24:00 · 050-5869-9632",
+    note: "Stylish sakaba — homemade noodles (wagyu ragu ravioli, sweet potato gnocchi) + craft shochu. Try sweetbread & corn tempura. 1F standing bar: ¥200 off drinks. Budget ¥3,000–3,999.",
+    tags: ["ravioli", "gnocchi", "shochu", "sakaba"],
+    lat: 35.6297,
+    lng: 139.6848,
+  },
 ];
 
 export const foodMapPlaces = foodSpots.map((spot) => ({
