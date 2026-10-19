@@ -9,6 +9,7 @@ import MomAndPop from "@/pages/MomAndPop";
 import JazzCafes from "@/pages/JazzCafes";
 import Bars from "@/pages/Bars";
 import Poke from "@/pages/Poke";
+import CheckIn from "@/pages/CheckIn";
 import Notes from "@/pages/Notes";
 import Translate from "@/pages/Translate";
 import Watches from "@/pages/Watches";
@@ -29,6 +30,7 @@ function App() {
           <Route path="/jazz-cafes" element={<JazzCafes />} />
           <Route path="/bars" element={<Bars />} />
           <Route path="/poke" element={<Poke />} />
+          <Route path="/check-in" element={<CheckIn />} />
           <Route path="/map" element={<MapPage />} />
           <Route path="/notes" element={<Notes />} />
           <Route path="/translate" element={<Translate />} />

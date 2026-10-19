@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { CalendarDays, Utensils, Heart, Music, Wine, Zap, NotebookPen, Languages, Watch, Map as MapIcon } from "lucide-react";
+import { CalendarDays, Utensils, Heart, Music, Wine, Zap, Camera, NotebookPen, Languages, Watch, Map as MapIcon } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const TABS = [
@@ -10,6 +10,7 @@ const TABS = [
   { to: "/jazz-cafes", label: "Jazz", Icon: Music },
   { to: "/bars", label: "Bars", Icon: Wine },
   { to: "/poke", label: "Poke!", Icon: Zap },
+  { to: "/check-in", label: "Check In!", Icon: Camera },
   { to: "/map", label: "Map", Icon: MapIcon },
   { to: "/notes", label: "Notes", Icon: NotebookPen },
   { to: "/translate", label: "Phrases", Icon: Languages },
