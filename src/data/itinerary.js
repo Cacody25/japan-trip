@@ -127,6 +127,13 @@ export const days = [
         detail: "Guided tour or a stroll around the grounds — check ticket requirements in advance.",
       },
       {
+        time: "After palace",
+        title: "Tokyo Station Character Street (Marunouchi)",
+        kind: "shop",
+        detail:
+          "1-9-1 Marunouchi — Tokyo Station First Avenue B1, right by the palace / Yaesu side. The Star Wars Special Store pop-up here ended Jan 2026; Character Street still has other merch shops. For the permanent STAR WARS STORE by BENELIC, go to Ikebukuro PARCO Main Bldg 6F (easy ~10 min Fukutoshin from the hotel — also a good Day 6 free-day stop).",
+      },
+      {
         time: "12:00 – 3:00 PM",
         title: "Ginza",
         kind: "shop",
@@ -141,7 +148,7 @@ export const days = [
         title: "Akihabara: otaku, TCG & watch hunt",
         kind: "tcg",
         items: [
-          "Retro & pop culture — Mandarake Complex, Super Potato, Radio Kaikan, Don Quijote, Yodobashi Camera",
+          "Retro & pop culture — Mandarake Complex, Super Potato, Radio Kaikan, Radio Center (1-14-2 Sotokanda — electronics under the tracks), Don Quijote, Yodobashi Camera",
           "TCG shops — Hareruya 2, Magi Akihabara, Fukufuku, Taro, Card Secret, Valuable Card Tokyo, Trading Card Shop YK",
           "Watch shops — VIN Time (Ginza), Mizutani Camera (Akihabara)",
           "Culture & solo spot — Hanabusa Inari Shrine, Dashiya (solo dashi / ochazuke)",
@@ -201,6 +208,13 @@ export const days = [
         kind: "note",
         detail:
           "15 stops from GLOU Higashi Shinjuku east to Chidorigafuchi. Everything is open by 11:00 AM — then a counter-clockwise 5 km Imperial Palace Loop with gate, bridge, and garden stops along the path.",
+      },
+      {
+        time: "Option C",
+        title: "STAR WARS STORE by BENELIC — Ikebukuro PARCO",
+        kind: "shop",
+        detail:
+          "Permanent official store, Main Bldg 6F, 1-28-2 Minami-Ikebukuro · 11:00–21:00. ~10 minutes on Fukutoshin from Higashi-Shinjuku. (The Marunouchi Character Street pop-up closed Jan 2026.)",
       },
       {
         time: "Stops 1–10",

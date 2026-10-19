@@ -60,6 +60,18 @@ export const foodSpots = [
     lat: 35.69596,
     lng: 139.70431,
   },
+  {
+    id: "gindaco-highball-shinjuku-nishiguchi",
+    name: "Gindaco Highball Sakaba — Shinjuku Nishiguchi",
+    area: "Shinjuku West",
+    address: "Atlas Nishi-Shinjuku Bldg 3F, 1-15-8 Nishi-Shinjuku, Shinjuku-ku, Tokyo (銀だこハイボール酒場 新宿西口店)",
+    access: "About 2 minutes from Shinjuku Station Exit 5 (Keio New / Toei Shinjuku / Oedo) · ~6 minutes from JR Shinjuku South Exit",
+    hours: "Mon–Thu 16:00–23:00 · Fri 16:00–4:00 · Sat 12:00–4:00 · Sun 12:00–23:00",
+    note: "Casual takoyaki + highball sakaba. Budget ¥1,000+/person — classic / cheese mentaiko / spicy mayo / teriyaki egg takoyaki (~¥340–420 for 3) · highball ¥450. Prices before tax.",
+    tags: ["takoyaki", "highball", "casual"],
+    lat: 35.6889,
+    lng: 139.69725,
+  },
 ];
 
 export const foodMapPlaces = foodSpots.map((spot) => ({
