@@ -48,6 +48,18 @@ export const foodSpots = [
     lat: 35.6768,
     lng: 139.6765,
   },
+  {
+    id: "niku-kappo-kabuku",
+    name: "Niku Kappo Kabuku — Shinjuku Honten",
+    area: "Kabukicho",
+    address: "Hotel Siena 2F, 2-22-1 Kabukicho, Shinjuku-ku, Tokyo (肉割烹 かぶく 新宿本店)",
+    access: "About 3 minutes from Higashi-Shinjuku · ~5–8 minutes from JR Shinjuku East Exit",
+    hours: "18:00–late (often until ~4:00) · Reserve ahead",
+    note: "Nice dinner — expensive multi-course meat kappo (A5 Miyazaki wagyu). Owner-run vibe, but this is a splurge course night, not a casual mom-and-pop.",
+    tags: ["wagyu", "kappo", "multi-course", "splurge"],
+    lat: 35.69596,
+    lng: 139.70431,
+  },
 ];
 
 export const foodMapPlaces = foodSpots.map((spot) => ({
