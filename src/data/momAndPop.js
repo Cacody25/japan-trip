@@ -12,6 +12,18 @@ export const momAndPopSpots = [
     lat: 35.67,
     lng: 139.8057,
   },
+  {
+    id: "sanyu-sushi",
+    name: "Sanyu Sushi",
+    area: "Hatagaya",
+    address: "3-21-3 Hatagaya, Shibuya, Tokyo 〒151-0072 (三勇鮨)",
+    access: "About 5–7 minutes walk from Hatagaya Station (Keio New Line), north exit",
+    hours: "Mon/Thu–Sun 11:30–13:30 & 17:00–20:00 · Closed Tue & Wed",
+    note: "Set course sushi. Small neighborhood shop — cash only.",
+    tags: ["sushi", "set course"],
+    lat: 35.6792,
+    lng: 139.6741,
+  },
 ];
 
 export const momAndPopMapPlaces = momAndPopSpots.map((spot) => ({
