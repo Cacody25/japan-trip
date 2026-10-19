@@ -96,6 +96,18 @@ export const foodSpots = [
     lat: 35.6467,
     lng: 139.7101,
   },
+  {
+    id: "sushi-joe",
+    name: "Sushi Joe (鮨ジョー)",
+    area: "Roppongi",
+    address: "1F Sokei Building (惣慶ビル), 7-9-4 Roppongi, Minato-ku, Tokyo",
+    access: "1-minute walk from Roppongi Station Midtown Exit",
+    hours: "Mon–Sat & day before/after holidays 11:00–14:30 & 18:00–23:00 · Closed Sun & public holidays · Reservations accepted",
+    note: "Highly rated sushi (★4.8). Lunch ¥5,000–5,999 · Dinner ¥15,000–19,999.",
+    tags: ["sushi", "splurge"],
+    lat: 35.66458,
+    lng: 139.73005,
+  },
 ];
 
 export const foodMapPlaces = foodSpots.map((spot) => ({
