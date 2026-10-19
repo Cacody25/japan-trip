@@ -298,9 +298,10 @@ export const days = [
       },
       {
         time: "6:00 PM",
-        title: "Dinner — FUJI SAKU",
+        title: "Dinner — Taishoen (大昌園)",
         kind: "food",
-        detail: "Kinshichō — sushi at 4-5-6 Kinshi, Sumida-ku (Echigoya Bldg 1F), a few minutes from Kinshichō Station.",
+        detail:
+          "Authentic yakiniku — 2-14-7 Asakusa. Reservation-only omakase meat grill (50+ years) · Thu 17:00–23:00 · cash · ~3 min from TX Asakusa. Alt: FUJI SAKU sushi in Kinshichō.",
       },
       {
         time: "8:00 PM",

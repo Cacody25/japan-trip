@@ -782,6 +782,16 @@ export const mapPlaces = [
     note: "TOKYO SKYTREE TOWN · Solamachi, 1-1-2 Oshiage — East Yard 6F. Window seats overlooking Skytree.",
   },
   {
+    id: "taishoen",
+    name: "Taishoen (大昌園)",
+    area: "Asakusa",
+    days: [7],
+    kind: "food",
+    lat: 35.712,
+    lng: 139.7938,
+    note: "Authentic yakiniku — 2-14-7 Asakusa. Reservation-only · Thu 17:00–23:00 · cash · ~3 min from TX Asakusa.",
+  },
+  {
     id: "fuji-saku",
     name: "FUJI SAKU",
     area: "Kinshichō",
@@ -789,7 +799,7 @@ export const mapPlaces = [
     kind: "food",
     lat: 35.6965,
     lng: 139.8145,
-    note: "Sushi — 4-5-6 Kinshi, Sumida-ku, Echigoya Bldg 1F. A few minutes from Kinshichō Station.",
+    note: "Sushi alt — 4-5-6 Kinshi, Sumida-ku, Echigoya Bldg 1F. A few minutes from Kinshichō Station.",
   },
   {
     id: "sumida-park",
