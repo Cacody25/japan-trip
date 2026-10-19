@@ -1,12 +1,15 @@
 import React from "react";
-import { Utensils, MapPin, Clock, TrainFront } from "lucide-react";
+import { Utensils, Heart, MapPin, Clock, TrainFront } from "lucide-react";
 
-export default function FoodCard({ spot }) {
+export default function FoodCard({ spot, tone = "food" }) {
+  const Icon = tone === "mom" ? Heart : Utensils;
+  const iconClass = tone === "mom" ? "text-gold" : "text-vermilion";
+
   return (
     <article className="rounded-2xl border border-white/[0.07] bg-card/60 p-5 md:p-4">
       <div className="flex items-start gap-3.5">
         <span className="mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-full border border-white/10 bg-white/[0.03]">
-          <Utensils className="h-3.5 w-3.5 text-vermilion" strokeWidth={1.6} />
+          <Icon className={`h-3.5 w-3.5 ${iconClass}`} strokeWidth={1.6} />
         </span>
         <div className="min-w-0">
           <div className="flex flex-wrap items-center gap-2">

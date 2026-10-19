@@ -4,9 +4,10 @@ import PlaceMap from "@/components/map/PlaceMap";
 import MapLegend from "@/components/map/MapLegend";
 import { mapPlaces } from "@/data/mapPlaces";
 import { foodMapPlaces } from "@/data/food";
+import { momAndPopMapPlaces } from "@/data/momAndPop";
 import { cn } from "@/lib/utils";
 
-const allPlaces = [...mapPlaces, ...foodMapPlaces];
+const allPlaces = [...mapPlaces, ...foodMapPlaces, ...momAndPopMapPlaces];
 
 export default function MapPage() {
   const [active, setActive] = useState("all");
@@ -20,6 +21,7 @@ export default function MapPage() {
   const shown = useMemo(() => {
     if (active === "all") return allPlaces;
     if (active === "food") return foodMapPlaces;
+    if (active === "mom") return momAndPopMapPlaces;
     return mapPlaces.filter((place) => place.days.includes(active));
   }, [active]);
 
@@ -27,6 +29,7 @@ export default function MapPage() {
     () => [
       { value: "all", label: "All" },
       { value: "food", label: "Food!" },
+      { value: "mom", label: "Mom+Pop" },
       ...dayOptions.map((day) => ({ value: day, label: `Day ${day}` })),
     ],
     [dayOptions],
@@ -37,7 +40,7 @@ export default function MapPage() {
       <SectionHeading
         eyebrow="Reference"
         title="Map"
-        subtitle="Planned stops plus Food! backups — tap a dot to see what's there. Positions are approximate, for orientation."
+        subtitle="Planned stops plus Food! and Mom+Pop backups — tap a dot to see what's there. Positions are approximate, for orientation."
       />
 
       <div className="sticky top-0 z-30 mt-5 border-b border-white/[0.06] bg-background/85 px-5 py-3 backdrop-blur-xl md:px-8">

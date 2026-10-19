@@ -5,6 +5,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import Layout from "@/components/Layout";
 import Days from "@/pages/Days";
 import Food from "@/pages/Food";
+import MomAndPop from "@/pages/MomAndPop";
 import Notes from "@/pages/Notes";
 import Translate from "@/pages/Translate";
 import Watches from "@/pages/Watches";
@@ -21,6 +22,7 @@ function App() {
         <Route element={<Layout />}>
           <Route path="/" element={<Days />} />
           <Route path="/food" element={<Food />} />
+          <Route path="/mom-and-pop" element={<MomAndPop />} />
           <Route path="/map" element={<MapPage />} />
           <Route path="/notes" element={<Notes />} />
           <Route path="/translate" element={<Translate />} />
