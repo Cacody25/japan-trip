@@ -24,6 +24,18 @@ export const momAndPopSpots = [
     lat: 35.6792,
     lng: 139.6741,
   },
+  {
+    id: "steak-shinoda",
+    name: "Steak Shinoda",
+    area: "Yushima",
+    address: "4-5-8 Yushima, Bunkyo-ku, Tokyo 〒113-0034 (ステーキしのだ)",
+    access: "About 5 minutes walk from Yushima Station (Chiyoda Line), Exit 1 / 3",
+    hours: "Weekdays 11:30–13:30 & 17:00–22:00 · Sat/Sun dinner 17:00–22:00 · Open daily",
+    note: "Owner-run teppan steak shop — pricey set course steak at night, but looks excellent. Lunch is the famous steak curry.",
+    tags: ["steak", "set course"],
+    lat: 35.7075,
+    lng: 139.7661,
+  },
 ];
 
 export const momAndPopMapPlaces = momAndPopSpots.map((spot) => ({
