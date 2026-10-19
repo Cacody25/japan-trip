@@ -155,6 +155,13 @@ export const days = [
         ],
       },
       {
+        time: "Late afternoon",
+        title: "Sasamaki Kenuki Sushi (笹巻けぬきすし総本店)",
+        kind: "food",
+        detail:
+          "Udagawa Bldg 1F, 2-12 Kanda Ogawacho — Edo-era (1702) bamboo-leaf sushi, takeout classic (best ~3 hrs after making). Mon–Sat ~10:00 until sold out · closed Sun/holidays · cash · ~3 min from Ogawamachi. Hit before they sell out, then on to mAach.",
+      },
+      {
         time: "Evening",
         title: "mAach ecute & 2k540 Aki-Oka Artisan",
         kind: "shop",

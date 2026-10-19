@@ -392,6 +392,16 @@ export const mapPlaces = [
     note: "Solo dashi / ochazuke counter.",
   },
   {
+    id: "sasamaki-kenuki-sushi",
+    name: "Sasamaki Kenuki Sushi",
+    area: "Kanda Ogawacho",
+    days: [4],
+    kind: "food",
+    lat: 35.6956,
+    lng: 139.7668,
+    note: "Udagawa Bldg 1F, 2-12 Kanda Ogawacho — bamboo-leaf sushi since 1702 · takeout · Mon–Sat until sold out · cash.",
+  },
+  {
     id: "maach-ecute",
     name: "mAach ecute",
     area: "Kanda Manseibashi",
