@@ -24,6 +24,18 @@ export const foodSpots = [
     lat: 35.7324,
     lng: 139.7077,
   },
+  {
+    id: "atsuton-gotanda",
+    name: "Atsugiri Tonkatsu Atsuton — Gotanda",
+    area: "Gotanda",
+    address: "3-16-44 Higashi-Gotanda, Shinagawa-ku, Tokyo (厚切りとんかつ 厚とん)",
+    access: "About 3–6 minutes walk from Gotanda Station, East Exit",
+    hours: "11:00–22:00 (LO 21:30)",
+    note: "Thick Tonkatsu!",
+    tags: ["tonkatsu"],
+    lat: 35.6266,
+    lng: 139.7274,
+  },
 ];
 
 export const foodMapPlaces = foodSpots.map((spot) => ({
