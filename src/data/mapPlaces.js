@@ -4,6 +4,7 @@ export const PLACE_KINDS = {
   nature: { label: "Parks & nature", color: "#7FB069" },
   shop: { label: "Shopping & TCG", color: "#C4708C" },
   food: { label: "Food & drink", color: "#E4573D" },
+  bar: { label: "Bars", color: "#8C7BD8" },
   watch: { label: "Watch shops", color: "#E0B04A" },
 };
 

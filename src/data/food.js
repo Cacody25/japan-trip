@@ -36,6 +36,18 @@ export const foodSpots = [
     lat: 35.6266,
     lng: 139.7274,
   },
+  {
+    id: "nihao-hatagaya",
+    name: "Nihao",
+    area: "Hatagaya",
+    address: "2F Masumoto Sake Shop, 2-27-4 Nishihara, Shibuya-ku, Tokyo (您好 / ニイハオ)",
+    access: "3-minute walk from Hatagaya Station (south exit), along Nishihara Shopping Street toward Yoyogi-Uehara",
+    hours: "Tue–Sat 17:00–22:00 (LO 21:30) · Closed Sun & Mon",
+    note: "Dumplings look great! Tabelog Dumplings Top 100. Card / QR / e-money OK.",
+    tags: ["dumplings", "top 100"],
+    lat: 35.6768,
+    lng: 139.6765,
+  },
 ];
 
 export const foodMapPlaces = foodSpots.map((spot) => ({
