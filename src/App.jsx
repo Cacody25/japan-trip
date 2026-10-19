@@ -6,6 +6,7 @@ import Layout from "@/components/Layout";
 import Days from "@/pages/Days";
 import Food from "@/pages/Food";
 import MomAndPop from "@/pages/MomAndPop";
+import JazzCafes from "@/pages/JazzCafes";
 import Notes from "@/pages/Notes";
 import Translate from "@/pages/Translate";
 import Watches from "@/pages/Watches";
@@ -23,6 +24,7 @@ function App() {
           <Route path="/" element={<Days />} />
           <Route path="/food" element={<Food />} />
           <Route path="/mom-and-pop" element={<MomAndPop />} />
+          <Route path="/jazz-cafes" element={<JazzCafes />} />
           <Route path="/map" element={<MapPage />} />
           <Route path="/notes" element={<Notes />} />
           <Route path="/translate" element={<Translate />} />

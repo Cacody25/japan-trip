@@ -5,9 +5,10 @@ import MapLegend from "@/components/map/MapLegend";
 import { mapPlaces } from "@/data/mapPlaces";
 import { foodMapPlaces } from "@/data/food";
 import { momAndPopMapPlaces } from "@/data/momAndPop";
+import { jazzCafeMapPlaces } from "@/data/jazzCafes";
 import { cn } from "@/lib/utils";
 
-const allPlaces = [...mapPlaces, ...foodMapPlaces, ...momAndPopMapPlaces];
+const allPlaces = [...mapPlaces, ...foodMapPlaces, ...momAndPopMapPlaces, ...jazzCafeMapPlaces];
 
 export default function MapPage() {
   const [active, setActive] = useState("all");
@@ -22,6 +23,7 @@ export default function MapPage() {
     if (active === "all") return allPlaces;
     if (active === "food") return foodMapPlaces;
     if (active === "mom") return momAndPopMapPlaces;
+    if (active === "jazz") return jazzCafeMapPlaces;
     return mapPlaces.filter((place) => place.days.includes(active));
   }, [active]);
 
@@ -30,6 +32,7 @@ export default function MapPage() {
       { value: "all", label: "All" },
       { value: "food", label: "Food!" },
       { value: "mom", label: "Mom+Pop" },
+      { value: "jazz", label: "Jazz" },
       ...dayOptions.map((day) => ({ value: day, label: `Day ${day}` })),
     ],
     [dayOptions],
@@ -40,7 +43,7 @@ export default function MapPage() {
       <SectionHeading
         eyebrow="Reference"
         title="Map"
-        subtitle="Planned stops plus Food! and Mom+Pop backups — tap a dot to see what's there. Positions are approximate, for orientation."
+        subtitle="Planned stops plus Food!, Mom+Pop, and Jazz cafes — tap a dot to see what's there. Positions are approximate, for orientation."
       />
 
       <div className="sticky top-0 z-30 mt-5 border-b border-white/[0.06] bg-background/85 px-5 py-3 backdrop-blur-xl md:px-8">
