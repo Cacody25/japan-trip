@@ -84,6 +84,18 @@ export const foodSpots = [
     lat: 35.6297,
     lng: 139.6848,
   },
+  {
+    id: "kan-agari-yoi",
+    name: "Kan-Agari Yoi (燗アガリ宵)",
+    area: "Ebisu",
+    address: "E-BOX1 2F, 4-9-8 Ebisu, Shibuya-ku, Tokyo",
+    access: "3-minute walk from Ebisu Station · 050-5869-9705",
+    hours: "17:00–23:00",
+    note: "Robata + warm sake (nurukan). Try the rock fish (charcoal-grilled seasonal / kinki). Budget ¥8,000–9,999.",
+    tags: ["robata", "sake", "fish", "splurge"],
+    lat: 35.6467,
+    lng: 139.7101,
+  },
 ];
 
 export const foodMapPlaces = foodSpots.map((spot) => ({
