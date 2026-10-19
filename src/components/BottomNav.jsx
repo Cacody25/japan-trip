@@ -1,10 +1,11 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { CalendarDays, NotebookPen, Languages, Watch, Map as MapIcon } from "lucide-react";
+import { CalendarDays, Utensils, NotebookPen, Languages, Watch, Map as MapIcon } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const TABS = [
   { to: "/", label: "Days", Icon: CalendarDays },
+  { to: "/food", label: "Food!", Icon: Utensils },
   { to: "/map", label: "Map", Icon: MapIcon },
   { to: "/notes", label: "Notes", Icon: NotebookPen },
   { to: "/translate", label: "Phrases", Icon: Languages },

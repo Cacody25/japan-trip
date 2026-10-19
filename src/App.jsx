@@ -4,6 +4,7 @@ import PageNotFound from "./lib/PageNotFound";
 import ScrollToTop from "./components/ScrollToTop";
 import Layout from "@/components/Layout";
 import Days from "@/pages/Days";
+import Food from "@/pages/Food";
 import Notes from "@/pages/Notes";
 import Translate from "@/pages/Translate";
 import Watches from "@/pages/Watches";
@@ -19,6 +20,7 @@ function App() {
       <Routes>
         <Route element={<Layout />}>
           <Route path="/" element={<Days />} />
+          <Route path="/food" element={<Food />} />
           <Route path="/map" element={<MapPage />} />
           <Route path="/notes" element={<Notes />} />
           <Route path="/translate" element={<Translate />} />
