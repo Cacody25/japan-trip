@@ -8,6 +8,7 @@ import Food from "@/pages/Food";
 import MomAndPop from "@/pages/MomAndPop";
 import JazzCafes from "@/pages/JazzCafes";
 import Bars from "@/pages/Bars";
+import Poke from "@/pages/Poke";
 import Notes from "@/pages/Notes";
 import Translate from "@/pages/Translate";
 import Watches from "@/pages/Watches";
@@ -27,6 +28,7 @@ function App() {
           <Route path="/mom-and-pop" element={<MomAndPop />} />
           <Route path="/jazz-cafes" element={<JazzCafes />} />
           <Route path="/bars" element={<Bars />} />
+          <Route path="/poke" element={<Poke />} />
           <Route path="/map" element={<MapPage />} />
           <Route path="/notes" element={<Notes />} />
           <Route path="/translate" element={<Translate />} />

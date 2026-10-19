@@ -16,6 +16,12 @@ export const days = [
     stops: [
       { time: "5:00 PM", title: "Land in Tokyo", kind: "transit", detail: "Touch down and clear immigration." },
       {
+        time: "If Narita",
+        title: "Pokémon Store Narita Airport",
+        kind: "shop",
+        detail: "Terminal 1 South Wing 4F — official Pokémon Store if you land at Narita (9:00–20:00).",
+      },
+      {
         time: "Evening",
         title: "Hotel check-in",
         kind: "rest",
@@ -63,6 +69,7 @@ export const days = [
           "Views & parks — Shibuya Sky, Miyashita Park",
           "Icons — Shibuya Scramble Crossing, Hachiko Statue",
           "Shopping & culture — Tower Records, d47 Museum, Shibuya 109",
+          "Poke! — Pokémon Center SHIBUYA (Shibuya PARCO 6F)",
           "Watch spot — Shellman (Shibuya)",
         ],
       },
@@ -155,6 +162,13 @@ export const days = [
         ],
       },
       {
+        time: "Poke!",
+        title: "Pokémon Center TOKYO DX & Café / Tokyo Station Store",
+        kind: "shop",
+        detail:
+          "Nihombashi Takashimaya East 5F — flagship DX + Pokémon Cafe (reserve café). Smaller Pokémon Store at First Avenue Tokyo Station 1F — same area as Character Street.",
+      },
+      {
         time: "Late afternoon",
         title: "Sasamaki Kenuki Sushi (笹巻けぬきすし総本店)",
         kind: "food",
@@ -196,6 +210,13 @@ export const days = [
           "Tokyo Joypolis — indoor arcade and amusement park",
         ],
       },
+      {
+        time: "Optional Poke!",
+        title: "Pokémon Center TOKYO-BAY",
+        kind: "shop",
+        detail:
+          "LaLaport TOKYO-BAY West Wing 2F (Funabashi) — full official Center across the bay if you want a detour from Toyosu / Odaiba (~30–40 min).",
+      },
       { time: "Evening", title: "Tokyo Tower", kind: "sight", detail: "Nighttime views over the city." },
     ],
   },
@@ -218,10 +239,10 @@ export const days = [
       },
       {
         time: "Option C",
-        title: "STAR WARS STORE by BENELIC — Ikebukuro PARCO",
+        title: "Ikebukuro — Star Wars + Pokémon MEGA TOKYO",
         kind: "shop",
         detail:
-          "Permanent official store, Main Bldg 6F, 1-28-2 Minami-Ikebukuro · 11:00–21:00. ~10 minutes on Fukutoshin from Higashi-Shinjuku. (The Marunouchi Character Street pop-up closed Jan 2026.)",
+          "STAR WARS STORE by BENELIC (PARCO Main 6F) · Pokémon Center MEGA TOKYO & Pikachu Sweets (Sunshine City alpa 2F). Both ~10 min Fukutoshin from Higashi-Shinjuku. Palace-loop route also passes Tokyo Station Pokémon Store.",
       },
       {
         time: "Stops 1–10",
@@ -298,10 +319,10 @@ export const days = [
       },
       {
         time: "4:00 PM",
-        title: "Starbucks — Solamachi East 6F",
-        kind: "food",
+        title: "Pokémon Center SKYTREE TOWN + Starbucks East 6F",
+        kind: "shop",
         detail:
-          "TOKYO SKYTREE TOWN · Solamachi, 1-1-2 Oshiage, Sumida-ku — East Yard 6F. Big window seats overlooking Skytree (and Sumida-limited Edo Kiriko iced coffee glasses).",
+          "Solamachi East Yard — Pokémon Center on 4F, then Starbucks East 6F for Skytree window seats (Sumida-limited Edo Kiriko iced coffee glasses).",
       },
       {
         time: "6:00 PM",
@@ -341,7 +362,8 @@ export const days = [
           "Minato Mirai 21 waterfront district",
           "Yokohama Landmark Tower & Sky Garden observatory",
           "Cup Noodles Museum",
-          "Pokemon Center Yokohama",
+          "Poke! — Pokémon Center YOKOHAMA (Sky Building 8F)",
+          "Poke! — Pokémon Center YOKOHAMA SATELLITE (JOINUS 2F)",
         ],
       },
       {
@@ -437,6 +459,12 @@ export const days = [
         kind: "watch",
         items: ["Carese (Ginza)", "Private Eyes (Kita-ku / Nishi-Sugamo)", "Watch CTI (Ginza)", "Shellman (Imperial Palace / Ginza)"],
       },
+      {
+        time: "Nearby Poke!",
+        title: "Pokémon Center TOKYO DX & Café",
+        kind: "shop",
+        detail: "Nihombashi Takashimaya East 5F — short hop from Ginza watch hunting.",
+      },
     ],
   },
   {
@@ -466,7 +494,12 @@ export const days = [
     accent: "#E4573D",
     stops: [
       { time: "Morning", title: "Check out of the hotel", kind: "rest" },
-      { time: "Then", title: "Head to the airport", kind: "transit", detail: "Fly home." },
+      {
+        time: "Then",
+        title: "Head to the airport",
+        kind: "transit",
+        detail: "Fly home. If Narita T1 — Pokémon Store South Wing 4F for last-minute merch.",
+      },
     ],
   },
 ];

@@ -1,9 +1,10 @@
 import React from "react";
-import { Utensils, Heart, Music, Wine, MapPin, Clock, TrainFront } from "lucide-react";
+import { Utensils, Heart, Music, Wine, Zap, MapPin, Clock, TrainFront } from "lucide-react";
 
 export default function FoodCard({ spot, tone = "food" }) {
-  const Icon = tone === "mom" ? Heart : tone === "cafe" ? Music : tone === "bar" ? Wine : Utensils;
-  const iconClass = tone === "mom" || tone === "cafe" || tone === "bar" ? "text-gold" : "text-vermilion";
+  const Icon = tone === "mom" ? Heart : tone === "cafe" ? Music : tone === "bar" ? Wine : tone === "poke" ? Zap : Utensils;
+  const iconClass =
+    tone === "mom" || tone === "cafe" || tone === "bar" || tone === "poke" ? "text-gold" : "text-vermilion";
 
   return (
     <article className="rounded-2xl border border-white/[0.07] bg-card/60 p-5 md:p-4">

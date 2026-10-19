@@ -7,6 +7,7 @@ import { foodMapPlaces } from "@/data/food";
 import { momAndPopMapPlaces } from "@/data/momAndPop";
 import { jazzCafeMapPlaces } from "@/data/jazzCafes";
 import { barMapPlaces } from "@/data/bars";
+import { pokeMapPlaces } from "@/data/poke";
 import { cn } from "@/lib/utils";
 
 const allPlaces = [
@@ -15,6 +16,7 @@ const allPlaces = [
   ...momAndPopMapPlaces,
   ...jazzCafeMapPlaces,
   ...barMapPlaces,
+  ...pokeMapPlaces,
 ];
 
 export default function MapPage() {
@@ -23,6 +25,7 @@ export default function MapPage() {
   const dayOptions = useMemo(() => {
     const set = new Set();
     mapPlaces.forEach((place) => place.days.forEach((day) => set.add(day)));
+    pokeMapPlaces.forEach((place) => place.days.forEach((day) => set.add(day)));
     return [...set].sort((a, b) => a - b);
   }, []);
 
@@ -32,7 +35,11 @@ export default function MapPage() {
     if (active === "mom") return momAndPopMapPlaces;
     if (active === "jazz") return jazzCafeMapPlaces;
     if (active === "bars") return barMapPlaces;
-    return mapPlaces.filter((place) => place.days.includes(active));
+    if (active === "poke") return pokeMapPlaces;
+    return [
+      ...mapPlaces.filter((place) => place.days.includes(active)),
+      ...pokeMapPlaces.filter((place) => place.days.includes(active)),
+    ];
   }, [active]);
 
   const options = useMemo(
@@ -42,6 +49,7 @@ export default function MapPage() {
       { value: "mom", label: "Mom+Pop" },
       { value: "jazz", label: "Jazz" },
       { value: "bars", label: "Bars" },
+      { value: "poke", label: "Poke!" },
       ...dayOptions.map((day) => ({ value: day, label: `Day ${day}` })),
     ],
     [dayOptions],
@@ -52,7 +60,7 @@ export default function MapPage() {
       <SectionHeading
         eyebrow="Reference"
         title="Map"
-        subtitle="Planned stops plus Food!, Mom+Pop, Jazz, and Bars — tap a dot to see what's there. Positions are approximate, for orientation."
+        subtitle="Planned stops plus Food!, Mom+Pop, Jazz, Bars, and Poke! — tap a dot to see what's there. Positions are approximate, for orientation."
       />
 
       <div className="sticky top-0 z-30 mt-5 border-b border-white/[0.06] bg-background/85 px-5 py-3 backdrop-blur-xl md:px-8">

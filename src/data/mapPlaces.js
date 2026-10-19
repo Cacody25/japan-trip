@@ -5,6 +5,7 @@ export const PLACE_KINDS = {
   shop: { label: "Shopping & TCG", color: "#C4708C" },
   food: { label: "Food & drink", color: "#E4573D" },
   bar: { label: "Bars", color: "#8C7BD8" },
+  poke: { label: "Poke!", color: "#F5C842" },
   watch: { label: "Watch shops", color: "#E0B04A" },
 };
 
@@ -860,16 +861,6 @@ export const mapPlaces = [
     kind: "sight",
     lat: 35.4561,
     lng: 139.6399,
-  },
-  {
-    id: "pokemon-center-yokohama",
-    name: "Pokémon Center Yokohama",
-    area: "Yokohama — Sky Building",
-    days: [8],
-    kind: "shop",
-    lat: 35.4662,
-    lng: 139.6223,
-    note: "Near Yokohama Station.",
   },
   {
     id: "yokohama-shops",
