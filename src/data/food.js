@@ -150,6 +150,32 @@ export const foodSpots = [
     lat: 35.6724,
     lng: 139.7652,
   },
+  {
+    id: "yakiton-hinata-ikebukuro",
+    name: "Yakiton Hinata — Ikebukuro West Exit",
+    area: "Ikebukuro West",
+    address: "First Building 2F, 3-29-11 Nishi-Ikebukuro, Toshima-ku, Tokyo (やきとんひなた)",
+    access: "Short walk from Ikebukuro Station Exit C3 · 050-5590-7374",
+    hours: "Daily 16:00–23:00 · Open every day",
+    note: "Popular yakiton izakaya — cheap skewers (white ¥190, kashira ¥200, skirt ¥210, negitan ¥280, premium tongue ¥310) plus mazesoba ¥860, liver steak, potato salad. Card / e-money / QR OK. Google ~4.1.",
+    tags: ["yakiton", "izakaya", "skewers"],
+    days: [6],
+    lat: 35.73143,
+    lng: 139.70671,
+  },
+  {
+    id: "tsurutontan-shibuya",
+    name: "TsuruTonTan UDON NOODLE Brasserie SHIBUYA",
+    area: "Shibuya",
+    address: "Shibuya Scramble Square 13F, 2-24-12 Shibuya, Shibuya-ku, Tokyo (つるとんたん)",
+    access: "Directly connected to Shibuya Station · same tower as Shibuya Sky · 03-6419-7155",
+    hours: "Daily 11:00–23:00 (LO 22:00)",
+    note: "Udon with a view — Scramble Square 13F, city overlook (north counter seats toward Yoyogi). Stylish brasserie take on TsuruTonTan.",
+    tags: ["udon", "view", "shibuya"],
+    days: [2],
+    lat: 35.6584,
+    lng: 139.7022,
+  },
 ];
 
 export const foodMapPlaces = foodSpots.map((spot) => ({

@@ -62,6 +62,12 @@ export const days = [
         ],
       },
       {
+        time: "1:30 PM",
+        title: "Omotesando walk",
+        kind: "shop",
+        detail: "Tree-lined boulevard from Harajuku toward Shibuya — architecture, boutiques, cafés. Mostly on foot (Yamanote / Fukutoshin if you hop).",
+      },
+      {
         time: "3:00 PM",
         title: "Shibuya highlights",
         kind: "sight",
@@ -74,6 +80,13 @@ export const days = [
         ],
       },
       {
+        time: "Meal in the tower",
+        title: "TsuruTonTan UDON — Scramble Square 13F",
+        kind: "food",
+        detail:
+          "Udon with a Shibuya view — same building as Shibuya Sky. Daily 11:00–23:00 (LO 22:00). Grab a north-facing counter seat if you can.",
+      },
+      {
         time: "6:00 PM",
         title: "PASS — hi-fi listening bar (Shibuya)",
         kind: "food",
@@ -82,9 +95,10 @@ export const days = [
       },
       {
         time: "Later",
-        title: "Shinjuku after dark",
+        title: "Shinjuku block (Yamanote)",
         kind: "food",
-        detail: "Or head back for nightlife — alleyway dining at Omoide Yokocho or Golden Gai, and neon lights.",
+        detail:
+          "Give Shinjuku its own evening — Tokyo Metropolitan Government Building (free observatory views), then Omoide Yokocho, Kabukicho, and Golden Gai. Yamanote Line is the easy hop from Shibuya.",
       },
     ],
   },
@@ -115,6 +129,13 @@ export const days = [
           "Official Harry Potter Café — just outside the station",
           "Harry Potter Mahou Dokoro — official merchandise shop",
         ],
+      },
+      {
+        time: "Nearby",
+        title: "Hie Shrine",
+        kind: "sight",
+        detail:
+          "Akasaka — striking red torii staircase up the hill. Short walk from Tameike-Sanno / Kokkai-gijomae before dinner at Sakai.",
       },
       {
         time: "Dinner",
@@ -196,6 +217,13 @@ export const days = [
         kind: "shop",
         detail: "Kanda Manseibashi, plus artisan shops under the train tracks between Akihabara and Okachimachi.",
       },
+      {
+        time: "Dinner option",
+        title: "Yurakucho Gado-shita",
+        kind: "food",
+        detail:
+          "Tiny izakayas under the JR tracks between Ginza and Yurakucho — classic end to a Tokyo Station / Ginza / Akihabara day. Marunouchi Line or walk from Ginza.",
+      },
     ],
   },
   {
@@ -215,9 +243,11 @@ export const days = [
       },
       {
         time: "Daytime",
-        title: "Odaiba highlights",
+        title: "Toyosu Bay + Odaiba (keep the bay together)",
         kind: "sight",
+        detail: "Yurikamome links Toyosu → Shin-Toyosu (teamLab Planets) → Odaiba — avoid criss-crossing the city.",
         items: [
+          "teamLab Planets TOKYO (Shin-Toyosu) — book timed tickets ahead",
           "Odaiba Seaside Park (Odaiba Kaihin Koen)",
           "DiverCity Tokyo Plaza — life-sized Unicorn Gundam Statue",
           "Panasonic Center Tokyo & Miraikan — National Museum of Emerging Science and Innovation",
@@ -261,10 +291,10 @@ export const days = [
       },
       {
         time: "Option C",
-        title: "Ikebukuro — Star Wars + Pokémon MEGA TOKYO",
+        title: "Ikebukuro — Star Wars + Pokémon MEGA TOKYO + Hinata",
         kind: "shop",
         detail:
-          "STAR WARS STORE by BENELIC (PARCO Main 6F) · Pokémon Center MEGA TOKYO & Pikachu Sweets (Sunshine City alpa 2F). Both ~10 min Fukutoshin from Higashi-Shinjuku. Palace-loop route also passes Tokyo Station Pokémon Store.",
+          "STAR WARS STORE by BENELIC (PARCO Main 6F) · Pokémon Center MEGA TOKYO & Pikachu Sweets (Sunshine City alpa 2F) · dinner at Yakiton Hinata West Exit (First Bldg 2F, Exit C3 — daily 16:00–23:00). ~10 min Fukutoshin from Higashi-Shinjuku.",
       },
       {
         time: "Stops 1–10",
@@ -317,12 +347,19 @@ export const days = [
     dateLabel: "Nov 5",
     city: "Tokyo",
     title: "Ueno, Asakusa & Skytree Town",
-    blurb: "Temples, market food and knives — the classic east side.",
+    blurb: "Quieter Yanaka first, then temples, market food and knives — classic east side (Ginza Line links Ueno ↔ Asakusa).",
     accent: "#7FB069",
     stops: [
-      { time: "9:00 AM", title: "Ueno Park & Tokyo National Museum", kind: "sight" },
       {
-        time: "11:00 AM",
+        time: "Morning",
+        title: "Yanaka + Yanaka Ginza + Nezu Shrine",
+        kind: "sight",
+        detail:
+          "Quieter Tokyo — tiny shops, cafés, bakeries, cat statues on Yanaka Ginza, then Nezu Shrine’s red torii tunnel. Chiyoda Line to Sendagi or Nezu; explore on foot.",
+      },
+      { time: "Late morning", title: "Ueno Park & Tokyo National Museum", kind: "sight" },
+      {
+        time: "11:30 AM",
         title: "Ameyoko Market street food walk",
         kind: "food",
         items: ["Takoyaki — octopus balls", "Yakitori — grilled chicken skewers", "Taiyaki — fish-shaped sweet bean pastry"],
@@ -337,7 +374,14 @@ export const days = [
         time: "1:30 PM",
         title: "Asakusa: Senso-ji & Kaminarimon",
         kind: "sight",
-        detail: "The Thunder Gate and temple grounds — matcha treats at Chacha Futatsume.",
+        detail: "The Thunder Gate and temple grounds — matcha treats at Chacha Futatsume. Start early if you want the temple before the crowds.",
+      },
+      {
+        time: "Note",
+        title: "Kita-Senju café (closed today)",
+        kind: "note",
+        detail:
+          "Coffee Work Shop Shanty (Mom+Pop) is ~5 min from Kita-Senju on the Tobu Skytree Line — but closed Wed/Thu. Save it for Day 9 (Sat) free day.",
       },
       {
         time: "4:00 PM",
@@ -436,6 +480,13 @@ export const days = [
         kind: "note",
         detail:
           "The flagship Minami-Aoyama location has closed for major building renovations; the Sanno branch remains open for French-Japanese fine dining.",
+      },
+      {
+        time: "If nearby",
+        title: "Coffee Work Shop Shanty (Kita-Senju)",
+        kind: "food",
+        detail:
+          "Mom+Pop kissaten ~5 min from Kita-Senju — 50+ years, elderly couple, thick toast & sandwiches with house coffee. Open Sat 10:00–18:00 · cash only. Closed Wed/Thu.",
       },
     ],
   },
