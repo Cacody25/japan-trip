@@ -242,7 +242,7 @@ export const mapPlaces = [
     kind: "shop",
     lat: 35.6812,
     lng: 139.7671,
-    note: "1-9-1 Marunouchi — Tokyo Station First Avenue B1. Star Wars Special Store pop-up ended Jan 2026; other character shops remain. Permanent Star Wars store is now Ikebukuro PARCO 6F.",
+    note: "1-9-1 Marunouchi — First Avenue B1 via Yaesu Underground Central Gate. Pokémon Store Tokyo Station (Station Master Pikachu exclusives) is here · 10:00–20:30. Star Wars pop-up ended Jan 2026; permanent Star Wars is Ikebukuro PARCO 6F.",
   },
   {
     id: "star-wars-ikebukuro-parco",

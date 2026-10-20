@@ -145,7 +145,7 @@ export const days = [
         title: "Tokyo Station Character Street (Marunouchi)",
         kind: "shop",
         detail:
-          "1-9-1 Marunouchi — Tokyo Station First Avenue B1, right by the palace / Yaesu side. The Star Wars Special Store pop-up here ended Jan 2026; Character Street still has other merch shops. For the permanent STAR WARS STORE by BENELIC, go to Ikebukuro PARCO Main Bldg 6F (easy ~10 min Fukutoshin from the hotel — also a good Day 6 free-day stop).",
+          "1-9-1 Marunouchi — First Avenue B1 via Yaesu Underground Central Gate. Poke! — Pokémon Store Tokyo Station (easy to miss) has exclusive Station Master Pikachu merch · 10:00–20:30. Other character shops too; Star Wars pop-up here ended Jan 2026 (permanent store is Ikebukuro PARCO 6F).",
       },
       {
         time: "Lunch",
@@ -178,10 +178,10 @@ export const days = [
       },
       {
         time: "Poke!",
-        title: "Pokémon Center TOKYO DX & Café / Tokyo Station Store",
+        title: "Pokémon Center TOKYO DX & Café",
         kind: "shop",
         detail:
-          "Nihombashi Takashimaya East 5F — flagship DX + Pokémon Cafe (reserve café). Smaller Pokémon Store at First Avenue Tokyo Station 1F — same area as Character Street.",
+          "Nihombashi Takashimaya East 5F — flagship DX + Pokémon Cafe (reserve café). Station Store with Station Master Pikachu is on Character Street B1 (see stop above).",
       },
       {
         time: "Late afternoon",
