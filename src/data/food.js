@@ -189,6 +189,19 @@ export const foodSpots = [
     lat: 35.66135,
     lng: 139.75355,
   },
+  {
+    id: "hirokatsu-shibuya-dogenzaka",
+    name: "Hirokatsu — Shibuya Dogenzaka (広勝)",
+    area: "Shibuya / Dogenzaka",
+    address: "Shoriki Bldg. B1F, 1-5-4 Dogenzaka, Shibuya-ku, Tokyo",
+    access: "Short walk up Dogenzaka from Shibuya Station · @izakaya_hirokatsu_shibuya",
+    hours: "Daily 12:00–23:00 · Sun until 22:30",
+    note: "Massive chanko tendon piled with giant shrimp, king crab tempura, and Wagyu sukiyaki — toppings spill out of the bowl. Special sauce over crispy seafood + tender sukiyaki in one bowl. Signature: Wagyu Sukiyaki Chanko Tendon ¥4,980.",
+    tags: ["tendon", "tempura", "wagyu", "sukiyaki", "splurge"],
+    days: [2],
+    lat: 35.65875,
+    lng: 139.69855,
+  },
 ];
 
 export const foodMapPlaces = foodSpots.map((spot) => ({

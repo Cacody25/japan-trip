@@ -87,6 +87,13 @@ export const days = [
           "Udon with a Shibuya view — same building as Shibuya Sky. Daily 11:00–23:00 (LO 22:00). Grab a north-facing counter seat if you can.",
       },
       {
+        time: "If nearby / hungry",
+        title: "Hirokatsu — Dogenzaka (massive tendon)",
+        kind: "food",
+        detail:
+          "Shoriki Bldg B1F, 1-5-4 Dogenzaka — giant shrimp + king crab tempura + Wagyu sukiyaki piled in one bowl (Wagyu Sukiyaki Chanko Tendon ¥4,980). Daily 12:00–23:00 · Sun until 22:30.",
+      },
+      {
         time: "6:00 PM",
         title: "PASS — hi-fi listening bar (Shibuya)",
         kind: "food",
