@@ -231,7 +231,14 @@ export const days = [
         detail:
           "LaLaport TOKYO-BAY West Wing 2F (Funabashi) — full official Center across the bay if you want a detour from Toyosu / Odaiba (~30–40 min).",
       },
-      { time: "Evening", title: "Tokyo Tower", kind: "sight", detail: "Nighttime views over the city." },
+      {
+        time: "Dinner",
+        title: "Shinbashi Yakiniku New Myondon",
+        kind: "food",
+        detail:
+          "6-22-7 Shinbashi — Korean BBQ house near Onarimon (Exit A3b, ~3 min), right by Tokyo Tower. Miyazaki wagyu skirt steak + secret sauce · dinner course ¥5,000–7,000 · AYCE drinks +¥2,000. Tue dinner 17:00–22:00 · closed Mon/Sun/holidays.",
+      },
+      { time: "Evening", title: "Tokyo Tower", kind: "sight", detail: "Nighttime views over the city — short hop from Onarimon / New Myondon." },
     ],
   },
   {

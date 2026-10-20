@@ -123,6 +123,20 @@ export const foodSpots = [
     lat: 35.68083,
     lng: 139.77056,
   },
+  {
+    id: "new-myondon-shinbashi",
+    name: "Shinbashi Yakiniku New Myondon (ニューみょんどん)",
+    area: "Shinbashi / Onarimon",
+    address: "6-22-7 Shinbashi, Minato-ku, Tokyo",
+    access: "About 3 minutes from Onarimon Station (Toei Mita), Exit A3b · 03-5843-8965",
+    hours:
+      "Tue–Sat & day before holidays · Lunch 11:30–14:00 (LO 13:30) · Dinner 17:00–22:00 (LO 21:00) · Closed Mon, Sun & public holidays",
+    note: "40+ year Myeongdong-rooted Korean BBQ in a detached house. Miyazaki wagyu (skirt steak is the hit) + secret sauce · premium course with tongue, Myeongdong kimchi, green-onion salt grill, AYCE rice. Casual vibe · private rooms · AYCE drinks +¥2,000. Lunch ¥1,500–2,000 · dinner course ¥5,000–7,000.",
+    tags: ["yakiniku", "korean", "wagyu"],
+    days: [5],
+    lat: 35.66048,
+    lng: 139.75464,
+  },
 ];
 
 export const foodMapPlaces = foodSpots.map((spot) => ({
