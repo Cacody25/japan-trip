@@ -21,8 +21,13 @@ const allPlaces = [
   ...pokeMapPlaces,
 ];
 
+function isFoodPlace(place) {
+  return place.optionalFood || place.momAndPop || place.kind === "food";
+}
+
 export default function MapPage() {
   const [active, setActive] = useState("all");
+  const [hideFood, setHideFood] = useState(false);
   const scrollerRef = useRef(null);
   const [canScrollLeft, setCanScrollLeft] = useState(false);
   const [canScrollRight, setCanScrollRight] = useState(true);
@@ -30,20 +35,33 @@ export default function MapPage() {
   const dayOptions = useMemo(() => itineraryDays.map((day) => day.n), []);
 
   const shown = useMemo(() => {
-    if (active === "all") return allPlaces;
-    if (active === "food") return foodMapPlaces;
-    if (active === "mom") return momAndPopMapPlaces;
-    if (active === "jazz") return jazzCafeMapPlaces;
-    if (active === "bars") return barMapPlaces;
-    if (active === "poke") return pokeMapPlaces;
-    return [
-      ...mapPlaces.filter((place) => place.days.includes(active)),
-      ...pokeMapPlaces.filter((place) => place.days.includes(active)),
-      ...jazzCafeMapPlaces.filter((place) => place.days.includes(active)),
-      ...foodMapPlaces.filter((place) => place.days.includes(active)),
-      ...momAndPopMapPlaces.filter((place) => place.days.includes(active)),
-    ];
-  }, [active]);
+    let places;
+    if (active === "all") places = allPlaces;
+    else if (active === "food") places = foodMapPlaces;
+    else if (active === "mom") places = momAndPopMapPlaces;
+    else if (active === "jazz") places = jazzCafeMapPlaces;
+    else if (active === "bars") places = barMapPlaces;
+    else if (active === "poke") places = pokeMapPlaces;
+    else {
+      places = [
+        ...mapPlaces.filter((place) => place.days.includes(active)),
+        ...pokeMapPlaces.filter((place) => place.days.includes(active)),
+        ...jazzCafeMapPlaces.filter((place) => place.days.includes(active)),
+        ...foodMapPlaces.filter((place) => place.days.includes(active)),
+        ...momAndPopMapPlaces.filter((place) => place.days.includes(active)),
+      ];
+    }
+
+    if (hideFood && active !== "food" && active !== "mom") {
+      places = places.filter((place) => !isFoodPlace(place));
+    }
+    return places;
+  }, [active, hideFood]);
+
+  const selectFilter = (value) => {
+    setActive(value);
+    if (value === "food" || value === "mom") setHideFood(false);
+  };
 
   const options = useMemo(
     () => [
@@ -136,7 +154,7 @@ export default function MapPage() {
             {options.map((option) => (
               <button
                 key={option.value}
-                onClick={() => setActive(option.value)}
+                onClick={() => selectFilter(option.value)}
                 className={cn(
                   "shrink-0 rounded-full border px-3.5 py-1.5 text-[10.5px] uppercase tracking-[0.14em] transition-colors",
                   active === option.value
@@ -147,6 +165,19 @@ export default function MapPage() {
                 {option.label}
               </button>
             ))}
+            <button
+              type="button"
+              onClick={() => setHideFood((prev) => !prev)}
+              aria-pressed={hideFood}
+              className={cn(
+                "shrink-0 rounded-full border px-3.5 py-1.5 text-[10.5px] uppercase tracking-[0.14em] transition-colors",
+                hideFood
+                  ? "border-gold/50 bg-gold/15 text-foreground"
+                  : "border-white/10 text-muted-foreground hover:text-foreground/80",
+              )}
+            >
+              Hide Food
+            </button>
           </div>
 
           <button
