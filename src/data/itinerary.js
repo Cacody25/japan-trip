@@ -263,6 +263,13 @@ export const days = [
           "LaLaport TOKYO-BAY West Wing 2F (Funabashi) — full official Center across the bay if you want a detour from Toyosu / Odaiba (~30–40 min).",
       },
       {
+        time: "Lunch / if nearby",
+        title: "Tempura Kakiage Nomura (Shinbashi)",
+        kind: "food",
+        detail:
+          "6-13-13 Shinbashi 1F — ~4 min from Onarimon, same neighborhood as dinner. Michelin Bib Gourmand kakiage don (shrimp, ¥1,600 / special ¥2,100). Tue open 11:00–14:00 & 17:00–21:00 · cash only · lines before open — arrive early.",
+      },
+      {
         time: "Dinner",
         title: "Shinbashi Yakiniku New Myondon",
         kind: "food",

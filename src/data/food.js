@@ -176,6 +176,19 @@ export const foodSpots = [
     lat: 35.6584,
     lng: 139.7022,
   },
+  {
+    id: "tempura-kakiage-nomura",
+    name: "Tempura Kakiage Nomura (天ぷらかき揚げ 野村)",
+    area: "Shinbashi / Onarimon",
+    address: "1F, 6-13-13 Shinbashi, Minato-ku, Tokyo",
+    access: "About 4 minutes from Onarimon Station · ~10 minutes from Shimbashi Station",
+    hours: "Mon–Fri 11:00–14:00 & 17:00–21:00 · Sat 11:00–14:00 · Closed Sun · Cash only",
+    note: "Michelin Bib Gourmand (4 years running). Owner trained 20 years at Nagoya’s Tempura Mitsumura — “first-class skill, third-class price.” Specialty: shrimp kakiage don (¥1,600 / special ¥2,100) with ~50-year donburi sauce + sesame oil. Lines before open even on weekdays (~20 people) — arrive early. Lunch ¥1,000–1,999 · dinner ¥2,000–2,999.",
+    tags: ["tempura", "kakiage", "donburi", "bib gourmand", "cash only"],
+    days: [5],
+    lat: 35.66135,
+    lng: 139.75355,
+  },
 ];
 
 export const foodMapPlaces = foodSpots.map((spot) => ({
