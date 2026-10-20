@@ -148,6 +148,13 @@ export const days = [
           "1-9-1 Marunouchi — Tokyo Station First Avenue B1, right by the palace / Yaesu side. The Star Wars Special Store pop-up here ended Jan 2026; Character Street still has other merch shops. For the permanent STAR WARS STORE by BENELIC, go to Ikebukuro PARCO Main Bldg 6F (easy ~10 min Fukutoshin from the hotel — also a good Day 6 free-day stop).",
       },
       {
+        time: "Lunch",
+        title: "TaiKouRou TOKYO — jumbo gyoza (Yaesu)",
+        kind: "food",
+        detail:
+          "TOFROM YAESU TOWER 1F, 1-6-1 Yaesu — ~3 min from Tokyo Station. Historic jumbo dumpling lunch set (6 pcs ¥1,250) since 1949; lines from open. Mon lunch 11:00–14:30 (LO 14:00) · closed Sun/holidays.",
+      },
+      {
         time: "12:00 – 3:00 PM",
         title: "Ginza",
         kind: "shop",

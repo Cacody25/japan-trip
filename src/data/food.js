@@ -105,8 +105,23 @@ export const foodSpots = [
     hours: "Mon–Sat & day before/after holidays 11:00–14:30 & 18:00–23:00 · Closed Sun & public holidays · Reservations accepted",
     note: "Highly rated sushi (★4.8). Lunch ¥5,000–5,999 · Dinner ¥15,000–19,999.",
     tags: ["sushi", "splurge"],
+    days: [],
     lat: 35.66458,
     lng: 139.73005,
+  },
+  {
+    id: "taikourou-tokyo",
+    name: "TaiKouRou TOKYO (泰興楼)",
+    area: "Yaesu / Tokyo Station",
+    address: "TOFROM YAESU TOWER 1F, 1-6-1 Yaesu, Chuo-ku, Tokyo",
+    access: "3-minute walk from Tokyo Station · 03-3271-9351",
+    hours:
+      "Mon–Fri & day before/after holidays 11:00–14:30 (LO 14:00) / 17:30–22:30 (LO 22:00) · Sat 11:00–15:00 (LO 14:30) / 17:30–21:30 (LO 20:30) · Closed Sun & public holidays",
+    note: "Historic jumbo gyoza since 1949 — lunch set 6 pcs ¥1,250. Expect a line from open. Chewy handmade wrappers, juicy filling; West Coast-ish interior + house craft beer. Card / QR OK · no e-money. Lunch ¥1,000–1,999.",
+    tags: ["gyoza", "chinese", "lunch"],
+    days: [4],
+    lat: 35.68083,
+    lng: 139.77056,
   },
 ];
 
@@ -114,7 +129,7 @@ export const foodMapPlaces = foodSpots.map((spot) => ({
   id: spot.id,
   name: spot.name,
   area: spot.area,
-  days: [],
+  days: spot.days ?? [],
   optionalFood: true,
   kind: "food",
   lat: spot.lat,

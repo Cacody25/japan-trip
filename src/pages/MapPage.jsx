@@ -27,6 +27,7 @@ export default function MapPage() {
     mapPlaces.forEach((place) => place.days.forEach((day) => set.add(day)));
     pokeMapPlaces.forEach((place) => place.days.forEach((day) => set.add(day)));
     jazzCafeMapPlaces.forEach((place) => place.days.forEach((day) => set.add(day)));
+    foodMapPlaces.forEach((place) => place.days.forEach((day) => set.add(day)));
     return [...set].sort((a, b) => a - b);
   }, []);
 
@@ -41,6 +42,7 @@ export default function MapPage() {
       ...mapPlaces.filter((place) => place.days.includes(active)),
       ...pokeMapPlaces.filter((place) => place.days.includes(active)),
       ...jazzCafeMapPlaces.filter((place) => place.days.includes(active)),
+      ...foodMapPlaces.filter((place) => place.days.includes(active)),
     ];
   }, [active]);
 
