@@ -159,6 +159,7 @@ export const days = [
         title: "Ginza",
         kind: "shop",
         items: [
+          "Lunch alt — Rabu Ginza Grasse (羅豚): Kurobuta main + Japanese buffet + drink bar, Ginza Grasse 10F · Exit C8 (viral ~¥1k; sets now ~¥1,900–2,600)",
           "Itoya — multi-story stationery paradise",
           "Ginza Six — luxury complex with a rooftop garden view",
           "Flagship stores — Muji & Uniqlo",

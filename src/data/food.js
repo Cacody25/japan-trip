@@ -137,6 +137,19 @@ export const foodSpots = [
     lat: 35.66048,
     lng: 139.75464,
   },
+  {
+    id: "rabu-ginza-grasse",
+    name: "Rabu Ginza Grasse (羅豚 ギンザ・グラッセ)",
+    area: "Ginza",
+    address: "Ginza Grasse 10F, 3-2-15 Ginza, Chuo-ku, Tokyo",
+    access: "30 seconds from Ginza Station Exit C8 · ~3 min from JR Yurakucho",
+    hours: "11:00–15:00 · 17:00–23:00 (food LO 22:00 · drinks LO 22:30) · lunch last entry 14:00",
+    note: "Prime Ginza 10F buffet lunch — choose a Kurobuta (or other) main + ~20-item Japanese buffet / obanzai + drink bar. Viral posts call it ~¥1,000; current set+buffet is roughly ¥1,900–2,600 — still wild value with a Ginza view. Card / e-money / QR OK.",
+    tags: ["buffet", "kurobuta", "lunch", "value"],
+    days: [4],
+    lat: 35.6724,
+    lng: 139.7652,
+  },
 ];
 
 export const foodMapPlaces = foodSpots.map((spot) => ({
