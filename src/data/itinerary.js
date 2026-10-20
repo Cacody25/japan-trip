@@ -75,9 +75,16 @@ export const days = [
       },
       {
         time: "6:00 PM",
+        title: "PASS — hi-fi listening bar (Shibuya)",
+        kind: "food",
+        detail:
+          "F93 Shibuya II 3F, 3-15-2 Shibuya — minimalist listening bar with vintage JBL and a rotating “sweet spot” seat. Cover ¥1,000 · cocktails ¥1,100–1,980 · Tue–Sun 18:00–24:00 (closed Mon). Photos OK, no flash.",
+      },
+      {
+        time: "Later",
         title: "Shinjuku after dark",
         kind: "food",
-        detail: "Nightlife, alleyway dining at Omoide Yokocho or Golden Gai, and neon lights.",
+        detail: "Or head back for nightlife — alleyway dining at Omoide Yokocho or Golden Gai, and neon lights.",
       },
     ],
   },

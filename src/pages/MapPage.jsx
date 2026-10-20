@@ -26,6 +26,7 @@ export default function MapPage() {
     const set = new Set();
     mapPlaces.forEach((place) => place.days.forEach((day) => set.add(day)));
     pokeMapPlaces.forEach((place) => place.days.forEach((day) => set.add(day)));
+    jazzCafeMapPlaces.forEach((place) => place.days.forEach((day) => set.add(day)));
     return [...set].sort((a, b) => a - b);
   }, []);
 
@@ -39,6 +40,7 @@ export default function MapPage() {
     return [
       ...mapPlaces.filter((place) => place.days.includes(active)),
       ...pokeMapPlaces.filter((place) => place.days.includes(active)),
+      ...jazzCafeMapPlaces.filter((place) => place.days.includes(active)),
     ];
   }, [active]);
 
