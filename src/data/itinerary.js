@@ -145,7 +145,7 @@ export const days = [
         title: "Tokyo Station Character Street (Marunouchi)",
         kind: "shop",
         detail:
-          "1-9-1 Marunouchi — First Avenue B1 via Yaesu Underground Central Gate. Poke! — Pokémon Store Tokyo Station (easy to miss) has exclusive Station Master Pikachu merch · 10:00–20:30. Other character shops too; Star Wars pop-up here ended Jan 2026 (permanent store is Ikebukuro PARCO 6F).",
+          "1-9-1 Marunouchi — First Avenue via Yaesu gates · 10:00–20:30. Poke! — Pokémon Store (Character Street; Station Master Pikachu exclusives). Dragon Ball Store TOKYO — world’s first official DB store (First Avenue 1F; exclusives, statues, apparel). Star Wars pop-up here ended Jan 2026 (permanent store is Ikebukuro PARCO 6F).",
       },
       {
         time: "Lunch",
@@ -399,6 +399,13 @@ export const days = [
         title: "ナタデココ 横浜店 — Nata de Coco",
         kind: "food",
         detail: "Sweets and cafe stop in Yokohama.",
+      },
+      {
+        time: "On the way back",
+        title: "The Roaleans Coffee And Bar (Omori)",
+        kind: "food",
+        detail:
+          "αNEXT Omori Kaigan 9F — 1920s jazz café-bar with working gramophones & McIntosh horns. On the Keikyu/JR line between Yokohama and Tokyo · opens Fri 15:00 · cocktails ~¥1,500 · light meals ¥1,200–1,600.",
       },
       {
         time: "Note",

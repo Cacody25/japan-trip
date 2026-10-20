@@ -26,6 +26,19 @@ export const jazzCafeSpots = [
     lat: 35.65591,
     lng: 139.70551,
   },
+  {
+    id: "roaleans-omori",
+    name: "The Roaleans Coffee And Bar",
+    area: "Omori",
+    address: "αNEXT Omori Kaigan 9F, 2-17-2 Omori-kita, Ota-ku, Tokyo (ローリンズ)",
+    access: "1 minute from Keikyu Omori-Kaigan · ~8 minutes from JR Omori · 03-6429-9221",
+    hours: "Tue–Fri 15:00–23:00 · Sat/Sun/holidays 12:00–23:00 · Closed Mon (Tue if Mon holiday)",
+    note: "1920s American jazz café-bar — antiques & working gramophones (seven of them), McIntosh + horn speakers. Owner Kaoru Shimatake runs it solo. Cocktails ~¥1,500 · sandwiches/pizza ¥1,200–1,600 · house desserts ~¥900. Name = Roaring 20s + New Orleans.",
+    tags: ["jazz", "gramophone", "cafe", "bar"],
+    days: [8],
+    lat: 35.58709,
+    lng: 139.73515,
+  },
 ];
 
 export const jazzCafeMapPlaces = jazzCafeSpots.map((spot) => ({

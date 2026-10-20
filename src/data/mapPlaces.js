@@ -242,7 +242,17 @@ export const mapPlaces = [
     kind: "shop",
     lat: 35.6812,
     lng: 139.7671,
-    note: "1-9-1 Marunouchi — First Avenue B1 via Yaesu Underground Central Gate. Pokémon Store Tokyo Station (Station Master Pikachu exclusives) is here · 10:00–20:30. Star Wars pop-up ended Jan 2026; permanent Star Wars is Ikebukuro PARCO 6F.",
+    note: "1-9-1 Marunouchi — First Avenue via Yaesu gates · 10:00–20:30. Pokémon Store (Station Master Pikachu) + Dragon Ball Store TOKYO (world’s first official DB shop, 1F). Star Wars pop-up ended Jan 2026; permanent Star Wars is Ikebukuro PARCO 6F.",
+  },
+  {
+    id: "dragon-ball-store-tokyo",
+    name: "Dragon Ball Store TOKYO",
+    area: "Tokyo Station / First Avenue",
+    days: [4],
+    kind: "shop",
+    lat: 35.68125,
+    lng: 139.76725,
+    note: "First Avenue Tokyo Station 1F (Character Street) — world’s first official Dragon Ball store · exclusives, figures, statues · 10:00–20:30 · Yaesu North Exit ~1 min.",
   },
   {
     id: "star-wars-ikebukuro-parco",
