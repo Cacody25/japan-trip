@@ -94,6 +94,13 @@ export const helpPhrases = [
     meaning: "I apologize for my poor Japanese.",
   },
   {
+    en: "My Japanese is trash",
+    jp: "日本語、下手くそ",
+    romaji: "Nihongo, hetakuso",
+    say: "[nee-hohn-goh, heh-tah-koo-soh]",
+    meaning: "Casual self-roast — my Japanese is no good. Say it about yourself, not the other person.",
+  },
+  {
     en: "May I ask a question?",
     romaji: "Shitsumon shite mo ii desu ka?",
     say: "[Sheet-sue-mon she-teh moh ee dess-kah?]",
@@ -175,6 +182,62 @@ export const pokemonNames = [
   { en: "Mr. Mime", jp: "バリヤード", romaji: "Barrierd" },
   { en: "Cubone", jp: "カラカラ", romaji: "Karakara" },
   { en: "Psyduck", jp: "コダック", romaji: "Koduck / Kodakku" },
+];
+
+// Short bunches sized for one iPhone lock-screen screenshot. Top of the view stays empty for the clock.
+export const phraseLockScreens = [
+  {
+    id: "hello",
+    title: "Hello",
+    accent: "#E2A03F",
+    lines: [
+      { en: "Morning", jp: "おはようございます", romaji: "Ohayō gozaimasu" },
+      { en: "Afternoon", jp: "こんにちは", romaji: "Konnichiwa" },
+      { en: "Evening", jp: "こんばんは", romaji: "Konbanwa" },
+      { en: "Thank you", jp: "ありがとうございます", romaji: "Arigatō gozaimasu" },
+      { en: "Please", jp: "お願いします", romaji: "Onegai shimasu" },
+      { en: "Excuse me", jp: "すみません", romaji: "Sumimasen" },
+    ],
+  },
+  {
+    id: "stuck",
+    title: "I'm stuck",
+    accent: "#E4573D",
+    lines: [
+      { en: "Hetakuso", jp: "日本語、下手くそ", romaji: "Nihongo, hetakuso" },
+      { en: "English OK?", jp: "英語で大丈夫ですか", romaji: "Eigo de daijōbu desu ka?" },
+      { en: "Lost", jp: "わかりません", romaji: "Wakarimasen" },
+      { en: "Restroom", jp: "トイレはどこですか", romaji: "Toire wa doko desu ka?" },
+      { en: "How much?", jp: "いくらですか", romaji: "Ikura desu ka?" },
+      { en: "This one", jp: "これください", romaji: "Kore kudasai" },
+    ],
+  },
+  {
+    id: "shop",
+    title: "Shop & eat",
+    accent: "#7FB069",
+    lines: [
+      { en: "Yes please", jp: "はい、お願いします", romaji: "Hai, onegaishimasu" },
+      { en: "No thanks", jp: "大丈夫です", romaji: "Daijōbu desu" },
+      { en: "Card / cash", jp: "カードで / 現金で", romaji: "Kādo de / Genkin de" },
+      { en: "Menu", jp: "メニューをお願いします", romaji: "Menyū o onegaishimasu" },
+      { en: "Recommend", jp: "おすすめは何ですか", romaji: "Osusume wa nan desu ka" },
+      { en: "The bill", jp: "お会計お願いします", romaji: "O-kaikei onegaishimasu" },
+    ],
+  },
+  {
+    id: "pokemon",
+    title: "Pokémon",
+    accent: "#F5C842",
+    lines: [
+      { en: "Sealed", jp: "未開封", romaji: "Mi-kaifū" },
+      { en: "Slabs", jp: "スラブ", romaji: "Surabu" },
+      { en: "Snorlax", jp: "カビゴン", romaji: "Kabigon" },
+      { en: "Eevee", jp: "イーブイ", romaji: "Iibui" },
+      { en: "Psyduck", jp: "コダック", romaji: "Kodakku" },
+      { en: "Bulbasaur", jp: "フシギダネ", romaji: "Fushigidane" },
+    ],
+  },
 ];
 
 export const currency = {

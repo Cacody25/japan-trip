@@ -1,8 +1,11 @@
-import React, { useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
+import { AnimatePresence } from "framer-motion";
+import { Maximize2 } from "lucide-react";
 import SectionHeading from "@/components/SectionHeading";
 import PhraseRow from "@/components/PhraseRow";
 import KonbiniCard from "@/components/KonbiniCard";
 import Panel from "@/components/Panel";
+import PhraseLockScreen from "@/components/PhraseLockScreen";
 import { cn } from "@/lib/utils";
 import {
   konbiniScenarios,
@@ -15,6 +18,7 @@ import {
   tcgPhrases,
   pokemonNames,
   currency,
+  phraseLockScreens,
 } from "@/data/phrases";
 
 const CATEGORIES = [
@@ -32,6 +36,24 @@ const THREE_COL = "md:grid md:grid-cols-3 md:gap-x-6 md:px-6";
 
 export default function Translate() {
   const [active, setActive] = useState("konbini");
+  const [locked, setLocked] = useState(false);
+  const [lockIndex, setLockIndex] = useState(0);
+  const screen = phraseLockScreens[lockIndex];
+
+  const stepLock = useCallback((delta) => {
+    setLockIndex((i) => (i + delta + phraseLockScreens.length) % phraseLockScreens.length);
+  }, []);
+
+  useEffect(() => {
+    if (!locked) return undefined;
+    const onKey = (event) => {
+      if (event.key === "ArrowRight") stepLock(1);
+      else if (event.key === "ArrowLeft") stepLock(-1);
+      else if (event.key === "Escape") setLocked(false);
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [locked, stepLock]);
 
   return (
     <>
@@ -40,6 +62,19 @@ export default function Translate() {
         title="Translate"
         subtitle="What the clerk asks and what you say back — plus the phrases you'll reach for all day."
       />
+
+      <div className="px-5 pt-6 md:px-8">
+        <button
+          onClick={() => setLocked(true)}
+          className="flex w-full items-center justify-center gap-2.5 rounded-2xl border border-white/10 bg-card/60 py-4 text-[10.5px] uppercase tracking-[0.28em] text-gold transition-colors hover:border-gold/40"
+        >
+          <Maximize2 className="h-3.5 w-3.5" strokeWidth={1.7} />
+          Lock screen phrases
+        </button>
+        <p className="mt-3 text-center text-[11px] leading-relaxed text-muted-foreground">
+          Four screens — hello, stuck, shop & eat, Pokémon. The top stays clear so your clock sits above the phrases.
+        </p>
+      </div>
 
       <div className="sticky top-0 z-30 mt-5 border-b border-white/[0.06] bg-background/85 px-5 py-3 backdrop-blur-xl md:px-8">
         <div className="flex gap-2 overflow-x-auto pb-0.5 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
@@ -83,6 +118,7 @@ export default function Translate() {
               <PhraseRow
                 key={phrase.romaji}
                 en={phrase.en}
+                jp={phrase.jp}
                 romaji={phrase.romaji}
                 say={phrase.say}
                 meaning={phrase.meaning}
@@ -169,6 +205,19 @@ export default function Translate() {
           </Panel>
         ) : null}
       </div>
+
+      <AnimatePresence>
+        {locked ? (
+          <PhraseLockScreen
+            screen={screen}
+            index={lockIndex}
+            total={phraseLockScreens.length}
+            onClose={() => setLocked(false)}
+            onPrev={() => stepLock(-1)}
+            onNext={() => stepLock(1)}
+          />
+        ) : null}
+      </AnimatePresence>
     </>
   );
 }
