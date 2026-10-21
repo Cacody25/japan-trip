@@ -9,6 +9,7 @@ import { momAndPopMapPlaces } from "@/data/momAndPop";
 import { jazzCafeMapPlaces } from "@/data/jazzCafes";
 import { barMapPlaces } from "@/data/bars";
 import { pokeMapPlaces } from "@/data/poke";
+import { skinMapPlaces } from "@/data/skin";
 import { days as itineraryDays } from "@/data/itinerary";
 import { cn } from "@/lib/utils";
 
@@ -19,6 +20,7 @@ const allPlaces = [
   ...jazzCafeMapPlaces,
   ...barMapPlaces,
   ...pokeMapPlaces,
+  ...skinMapPlaces,
 ];
 
 function isFoodPlace(place) {
@@ -42,6 +44,7 @@ export default function MapPage() {
     else if (active === "jazz") places = jazzCafeMapPlaces;
     else if (active === "bars") places = barMapPlaces;
     else if (active === "poke") places = pokeMapPlaces;
+    else if (active === "skin") places = skinMapPlaces;
     else {
       places = [
         ...mapPlaces.filter((place) => place.days.includes(active)),
@@ -49,6 +52,7 @@ export default function MapPage() {
         ...jazzCafeMapPlaces.filter((place) => place.days.includes(active)),
         ...foodMapPlaces.filter((place) => place.days.includes(active)),
         ...momAndPopMapPlaces.filter((place) => place.days.includes(active)),
+        ...skinMapPlaces.filter((place) => place.days.includes(active)),
       ];
     }
 
@@ -71,6 +75,7 @@ export default function MapPage() {
       { value: "jazz", label: "Jazz" },
       { value: "bars", label: "Bars" },
       { value: "poke", label: "Poke!" },
+      { value: "skin", label: "Skin" },
       ...dayOptions.map((day) => ({ value: day, label: `Day ${day}` })),
     ],
     [dayOptions],
@@ -130,7 +135,7 @@ export default function MapPage() {
       <SectionHeading
         eyebrow="Reference"
         title="Map"
-        subtitle="Planned stops plus Food!, Mom+Pop, Jazz, Bars, and Poke! — tap a dot to see what's there. Positions are approximate, for orientation."
+        subtitle="Planned stops plus Food!, Mom+Pop, Jazz, Bars, Poke!, and Skin — tap a dot to see what's there. Positions are approximate, for orientation."
       />
 
       <div className="sticky top-0 z-30 mt-5 border-b border-white/[0.06] bg-background/85 px-5 py-3 backdrop-blur-xl md:px-8">

@@ -7,6 +7,7 @@ export const PLACE_KINDS = {
   bar: { label: "Bars", color: "#8C7BD8" },
   poke: { label: "Poke!", color: "#F5C842" },
   watch: { label: "Watch shops", color: "#E0B04A" },
+  skin: { label: "Skin", color: "#7EC8C3" },
 };
 
 const ALL_DAYS = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13];

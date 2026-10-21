@@ -68,6 +68,13 @@ export const days = [
         detail: "Tree-lined boulevard from Harajuku toward Shibuya — architecture, boutiques, cafés. Mostly on foot (Yamanote / Fukutoshin if you hop).",
       },
       {
+        time: "If you book",
+        title: "Skin — Omotesando & Shibuya",
+        kind: "note",
+        detail:
+          "Omotesando Skin Clinic (Kitajyu 4F, 5-9-13 Jingumae) is on this walk — Sat 11:00–19:00, closed Wed. Shibuya International Skin Clinic (Tokai 1F, Higashi 1-27-10, ~7 min toward Ebisu) has English staff, but Saturday is mornings only (10:00–13:00).",
+      },
+      {
         time: "3:00 PM",
         title: "Shibuya highlights",
         kind: "sight",
@@ -191,6 +198,7 @@ export const days = [
           "Itoya — multi-story stationery paradise",
           "Ginza Six — luxury complex with a rooftop garden view",
           "Flagship stores — Muji & Uniqlo",
+          "Skin — BIANCA CLINIC Ginza (ONE GINZA 12F, 1-8-19): lasers & skin rejuvenation · 10:00–19:00 · Kyobashi-side high-floor elevator",
         ],
       },
       {
@@ -284,6 +292,13 @@ export const days = [
           "6-22-7 Shinbashi — Korean BBQ house near Onarimon (Exit A3b, ~3 min), right by Tokyo Tower. Miyazaki wagyu skirt steak + secret sauce · dinner course ¥5,000–7,000 · AYCE drinks +¥2,000. Tue dinner 17:00–22:00 · closed Mon/Sun/holidays.",
       },
       { time: "Evening", title: "Tokyo Tower", kind: "sight", detail: "Nighttime views over the city — short hop from Onarimon / New Myondon." },
+      {
+        time: "If nearby",
+        title: "Skin — Roppongi & Motoazabu",
+        kind: "note",
+        detail:
+          "One stop from Kamiyacho. Azabu Beauty Clinic — AXALL ROPPONGI 6F, 7-8-6 Roppongi (Tue 10:00–18:00, closed Sun). Motoazabu Skin Clinic — Cadre 2F, 3-10-5 Motoazabu, ~2 min from Roppongi Hills (reception 9:00–18:00).",
+      },
     ],
   },
   {
