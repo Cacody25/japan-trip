@@ -37,23 +37,19 @@ export default function PhraseLockScreen({ screen, index, total, onClose, onPrev
         style={{ background: `radial-gradient(85% 45% at 50% 110%, ${screen.accent}1f 0%, transparent 62%)` }}
       />
 
-      <div className="relative mx-auto flex h-[100dvh] w-full max-w-[440px] flex-col px-7 pb-8 pt-[15vh]">
+      <div className="relative mx-auto flex h-[100dvh] w-full max-w-[440px] flex-col px-5 pb-8 pt-[15vh]">
         <div className="border-l border-vermilion/70 pl-5">
           <p className="text-[10px] uppercase tracking-[0.36em] text-gold/85">Phrases</p>
           <h2 className="mt-3 font-display text-[28px] leading-none text-white">{screen.title}</h2>
         </div>
 
         <div className="mt-8 flex-1 overflow-hidden">
-          <div className="space-y-3.5 border-l border-white/[0.14] pl-5">
+          <div className="grid grid-cols-2 gap-x-3 gap-y-5 border-l border-white/[0.14] pl-3">
             {screen.lines.map((line) => (
-              <div key={`${screen.id}-${line.en}`} className="flex items-baseline gap-3">
-                <span className="w-[92px] shrink-0 text-[9.5px] uppercase leading-tight tracking-[0.12em] text-gold/75">
-                  {line.en}
-                </span>
-                <span className="min-w-0">
-                  <span className="block text-[15px] leading-snug text-white/92">{line.jp}</span>
-                  <span className="mt-0.5 block text-[11px] leading-snug text-white/45">{line.romaji}</span>
-                </span>
+              <div key={`${screen.id}-${line.en}`} className="min-w-0">
+                <span className="block text-[9px] uppercase leading-tight tracking-[0.12em] text-gold/75">{line.en}</span>
+                <span className="mt-1 block whitespace-nowrap text-[15px] leading-snug text-white/92">{line.jp}</span>
+                <span className="mt-0.5 block text-[11px] leading-snug text-white/45">{line.romaji}</span>
               </div>
             ))}
           </div>

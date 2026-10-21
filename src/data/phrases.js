@@ -219,8 +219,8 @@ export const phraseLockScreens = [
     lines: [
       { en: "Yes please", jp: "はい、お願いします", romaji: "Hai, onegaishimasu" },
       { en: "No thanks", jp: "大丈夫です", romaji: "Daijōbu desu" },
-      { en: "Card / cash", jp: "カードで / 現金で", romaji: "Kādo de / Genkin de" },
-      { en: "Menu", jp: "メニューをお願いします", romaji: "Menyū o onegaishimasu" },
+      { en: "Card / cash", jp: "カード / 現金", romaji: "Kādo de / Genkin de" },
+      { en: "Menu", jp: "メニューください", romaji: "Menyū kudasai" },
       { en: "Recommend", jp: "おすすめは何ですか", romaji: "Osusume wa nan desu ka" },
       { en: "The bill", jp: "お会計お願いします", romaji: "O-kaikei onegaishimasu" },
     ],
