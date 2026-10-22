@@ -616,7 +616,7 @@ export const days = [
     dateLabel: "Nov 10",
     city: "Tokyo",
     title: "Final Free Day",
-    blurb: "Souvenirs, packing, and one last favorite.",
+    blurb: "Pack, then Chen’s mapo tofu — the last dinner before the flight.",
     accent: "#8FA0B5",
     stops: [
       {
@@ -625,6 +625,13 @@ export const days = [
         kind: "shop",
         detail:
           "Last-minute gifts, packing, and revisiting favorite spots. If Saturday's crate dig was too full, Shibuya and Shimokitazawa record shops are open Tuesday afternoon, and Disk Union Shinjuku runs 12:00–20:00. Discland Jaro is closed Tuesday. Kankyō Records takes irregular days off — check before the Sangenjaya hop.",
+      },
+      {
+        time: "Dinner",
+        title: "Akasaka Shisen Hanten",
+        kind: "food",
+        detail:
+          "Zenkoku Ryokan Kaikan 5F/6F, 2-5-5 Hirakawacho — Chen Kenichi’s family restaurant, now run by his son Chen Kentaro. About 3 minutes from Nagatacho Exit 4. Tuesday dinner 17:00–22:00 (last order 21:00). Order Chen’s mapo tofu. Call 03-3263-9371 to reserve. Closed Mondays, so this night works. Eat and head back — you fly in the morning.",
       },
     ],
   },

@@ -215,6 +215,19 @@ export const foodSpots = [
     lat: 35.72915,
     lng: 139.71985,
   },
+  {
+    id: "shisen-hanten-akasaka",
+    name: "Akasaka Shisen Hanten (赤坂四川飯店)",
+    area: "Nagatacho / Hirakawacho",
+    address: "Zenkoku Ryokan Kaikan 5F/6F, 2-5-5 Hirakawacho, Chiyoda-ku, Tokyo",
+    access: "About 3 minutes from Nagatacho Station Exit 4 · ~5 minutes from Akasaka-mitsuke · 03-3263-9371",
+    hours: "Dinner 17:00–22:00 (LO 21:00) · Lunch 11:30–15:00 (LO 14:00) · Closed Mondays",
+    note: "Chen Kenichi’s family Sichuan house, now run by his son Chen Kentaro. The dish to order is Chen’s mapo tofu. Reserve by phone. About 10% service charge. Tuesday Nov 10 is open — last order 21:00, then back to pack for the morning flight.",
+    tags: ["sichuan", "mapo tofu", "iron chef"],
+    days: [12],
+    lat: 35.6797,
+    lng: 139.7395,
+  },
 ];
 
 export const foodMapPlaces = foodSpots.map((spot) => ({
