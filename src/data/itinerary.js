@@ -254,18 +254,25 @@ export const days = [
         detail: "Kanda Manseibashi, plus artisan shops under the train tracks between Akihabara and Okachimachi.",
       },
       {
-        time: "Dinner option",
+        time: "6:30 PM",
+        title: "Hibiya Rokusantei — booked",
+        kind: "food",
+        detail:
+          "Booked Monday Nov 2, 6:30 PM. Tokyo Midtown Hibiya 3F, 1-1-2 Yurakucho — connected to Hibiya Station. Leave Akihabara at 6:00 (Hibiya Line, one stop). Michiba Rokusan soba kaiseki. Dinner runs 17:30–21:00, last order 20:30. Closed Wed. 03-6812-7123.",
+      },
+      {
+        time: "After, if you want",
         title: "Yurakucho Gado-shita",
         kind: "food",
         detail:
-          "Tiny izakayas under the JR tracks between Ginza and Yurakucho — classic end to a Tokyo Station / Ginza / Akihabara day. Marunouchi Line or walk from Ginza.",
+          "Tiny izakayas under the JR tracks, a short walk from Midtown Hibiya — a drink after dinner, not the meal.",
       },
       {
         time: "If you stay late",
         title: "Ginza vinyl bars",
         kind: "food",
         detail:
-          "Both open Monday. GINZA MUSIC BAR (Brown Place 4F, 7-8-13) 19:00–4:00 — 3,000+ records, cocktails. Bar record (Iseki Bldg 2F, 8-7-20) 18:00–2:00 — 13-seat counter, no cover. Short walk back from Yurakucho.",
+          "Both open Monday, after the 6:30 dinner. GINZA MUSIC BAR (Brown Place 4F, 7-8-13) 19:00–4:00 — 3,000+ records, cocktails. Bar record (Iseki Bldg 2F, 8-7-20) 18:00–2:00 — 13-seat counter, no cover. Short walk from Hibiya.",
       },
     ],
   },

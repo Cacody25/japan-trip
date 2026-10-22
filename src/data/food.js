@@ -228,6 +228,19 @@ export const foodSpots = [
     lat: 35.6797,
     lng: 139.7395,
   },
+  {
+    id: "hibiya-rokusantei",
+    name: "Hibiya Rokusantei (日比谷ろくさん亭)",
+    area: "Hibiya / Yurakucho",
+    address: "Tokyo Midtown Hibiya 3F, 1-1-2 Yurakucho, Chiyoda-ku, Tokyo",
+    access: "Connected to Hibiya Station · about 5 minutes from Yurakucho · 03-6812-7123",
+    hours: "Lunch 11:00–15:00 (LO 14:30) · Dinner 17:30–21:00 (LO 20:30) · Closed Wednesday",
+    note: "Booked Monday Nov 2 at 6:30 PM. Michiba Rokusan’s soba kaiseki — about 25 seats. Dinner about ¥3,300–¥13,000 plus a 10% service charge. Leave Akihabara at 6:00; Hibiya Line is one stop.",
+    tags: ["japanese", "soba", "kaiseki", "booked"],
+    days: [4],
+    lat: 35.6736,
+    lng: 139.7597,
+  },
 ];
 
 export const foodMapPlaces = foodSpots.map((spot) => ({
