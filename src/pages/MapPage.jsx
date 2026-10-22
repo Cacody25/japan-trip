@@ -53,6 +53,7 @@ export default function MapPage() {
         ...foodMapPlaces.filter((place) => place.days.includes(active)),
         ...momAndPopMapPlaces.filter((place) => place.days.includes(active)),
         ...skinMapPlaces.filter((place) => place.days.includes(active)),
+        ...barMapPlaces.filter((place) => place.days.includes(active)),
       ];
     }
 

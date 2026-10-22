@@ -108,6 +108,13 @@ export const days = [
           "F93 Shibuya II 3F, 3-15-2 Shibuya — minimalist listening bar with vintage JBL and a rotating “sweet spot” seat. Cover ¥1,000 · cocktails ¥1,100–1,980 · Tue–Sun 18:00–24:00 (closed Mon). Photos OK, no flash.",
       },
       {
+        time: "If you stay",
+        title: "More Shibuya vinyl bars",
+        kind: "food",
+        detail:
+          "All three are open Saturday night. JBS (Dogenzaka 1-17-10 2F) — jazz/blues/soul, cash, drinks ¥500, about 19:00–23:00. record bar 33 1/3rpm (Dogenzaka 1-6-2 B1) — opens ~19:30, last entry ~21:30–23:00; overseas travelers OK. CAVE (1-15-12 Shibuya B1) — 18:00–3:00, music charge ¥1,000.",
+      },
+      {
         time: "Later",
         title: "Shinjuku block (Yamanote)",
         kind: "food",
@@ -238,6 +245,13 @@ export const days = [
         kind: "food",
         detail:
           "Tiny izakayas under the JR tracks between Ginza and Yurakucho — classic end to a Tokyo Station / Ginza / Akihabara day. Marunouchi Line or walk from Ginza.",
+      },
+      {
+        time: "If you stay late",
+        title: "Ginza vinyl bars",
+        kind: "food",
+        detail:
+          "Both open Monday. GINZA MUSIC BAR (Brown Place 4F, 7-8-13) 19:00–4:00 — 3,000+ records, cocktails. Bar record (Iseki Bldg 2F, 8-7-20) 18:00–2:00 — 13-seat counter, no cover. Short walk back from Yurakucho.",
       },
     ],
   },
