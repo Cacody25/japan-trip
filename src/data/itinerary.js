@@ -329,7 +329,7 @@ export const days = [
         title: "Ikebukuro — Star Wars + Pokémon MEGA TOKYO + Hinata",
         kind: "shop",
         detail:
-          "STAR WARS STORE by BENELIC (PARCO Main 6F) · Pokémon Center MEGA TOKYO & Pikachu Sweets (Sunshine City alpa 2F) · dinner at Yakiton Hinata West Exit (First Bldg 2F, Exit C3 — daily 16:00–23:00). ~10 min Fukutoshin from Higashi-Shinjuku.",
+          "STAR WARS STORE by BENELIC (PARCO Main 6F) · Pokémon Center MEGA TOKYO & Pikachu Sweets (Sunshine City alpa 2F) · Gyukatsu Motomura one floor up (Alpa 3F, 11:00–22:00) · dinner alt Yakiton Hinata West Exit (First Bldg 2F, Exit C3 — daily 16:00–23:00). ~10 min Fukutoshin from Higashi-Shinjuku.",
       },
       {
         time: "Stops 1–10",

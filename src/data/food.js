@@ -202,6 +202,19 @@ export const foodSpots = [
     lat: 35.65875,
     lng: 139.69855,
   },
+  {
+    id: "gyukatsu-motomura-sunshine",
+    name: "Gyukatsu Motomura — Sunshine Ikebukuro (牛かつもと村)",
+    area: "Ikebukuro / Sunshine City",
+    address: "Sunshine City Alpa 3F, 3-1 Higashi-Ikebukuro, Toshima-ku, Tokyo",
+    access: "Same complex as Pokémon Center MEGA TOKYO (one floor up) · ~8 min from Ikebukuro · ~10 min Fukutoshin from Higashi-Shinjuku · 03-6914-1333",
+    hours: "Daily 11:00–22:00 (LO 21:30) · Closed when Sunshine City is",
+    note: "Beef cutlet fried medium-rare, finished on a hot stone with wasabi soy. Sets about ¥2,000–3,000. Card and QR OK. Expect a line.",
+    tags: ["gyukatsu", "beef", "set meal"],
+    days: [6],
+    lat: 35.72915,
+    lng: 139.71985,
+  },
 ];
 
 export const foodMapPlaces = foodSpots.map((spot) => ({
