@@ -306,11 +306,17 @@ export const days = [
     weekday: "Wednesday",
     dateLabel: "Nov 4",
     city: "Tokyo",
-    title: "Free Day or Tokyo Disney Resort",
-    blurb: "Disney all day, or a west-to-east Shinjuku walk that ends at the palace loop.",
+    title: "Tokyo DisneySea",
+    blurb: "Ticket is booked — full day at the park. The Shinjuku walk and Ikebukuro stay as backups.",
     accent: "#B47FD8",
     stops: [
-      { time: "Option A", title: "Tokyo Disneyland or DisneySea", kind: "note", detail: "A full day at the park." },
+      {
+        time: "All day",
+        title: "Tokyo DisneySea",
+        kind: "sight",
+        detail:
+          "Ticket in hand. 1-13 Maihama, Urayasu — JR Keiyo Line to Maihama (about 15 min from Tokyo Station; from Higashi-Shinjuku, Shinjuku → Tokyo → Maihama). Plan on the whole day in the park.",
+      },
       {
         time: "Option B",
         title: "Shinjuku → Imperial Palace Loop walk",

@@ -575,13 +575,13 @@ export const mapPlaces = [
 
   {
     id: "disney-resort",
-    name: "Tokyo Disney Resort",
-    area: "Urayasu",
+    name: "Tokyo DisneySea",
+    area: "Maihama / Urayasu",
     days: [6],
     kind: "sight",
-    lat: 35.6329,
-    lng: 139.8804,
-    note: "Option A for the free day — Disneyland or DisneySea.",
+    lat: 35.6267,
+    lng: 139.8852,
+    note: "Day 6 — ticket in hand. JR Keiyo Line to Maihama, then a short walk into the park.",
   },
 
   // Option B — Shinjuku → Imperial Palace Loop (west to east)
