@@ -81,10 +81,24 @@ export const days = [
         items: [
           "Views & parks — Shibuya Sky, Miyashita Park",
           "Icons — Shibuya Scramble Crossing, Hachiko Statue",
-          "Shopping & culture — Tower Records, d47 Museum, Shibuya 109",
+          "Shopping & culture — Tower Records (vinyl on 6F), d47 Museum, Shibuya 109",
           "Poke! — Pokémon Center SHIBUYA (Shibuya PARCO 6F)",
           "Watch spot — Shellman (Shibuya)",
         ],
+      },
+      {
+        time: "While it's light",
+        title: "Shibuya record walk",
+        kind: "shop",
+        detail:
+          "All in Udagawa / Jinnan, all open Saturday — smaller shops prefer cash, and an intact OBI strip is the collector copy. Disk Union Jazz 5F & Club 4F (Antenna 21, 30-7) 11:00–20:00. Tower Records vinyl is on 6F, 11:00–22:00. HMV record shop (Noah, 36-2) 11:00–21:00. Face Records (10-2, 3F) about 13:00–19:00. Next Records (11-11, 2F) 12-inch singles, 13:00–20:00, listening decks. Discland Jaro (26-6) is the tiny jazz basement — Saturday only 13:30–18:00, so this one cannot wait until the bars.",
+      },
+      {
+        time: "If you hop",
+        title: "Shimokitazawa & Sangenjaya records",
+        kind: "shop",
+        detail:
+          "Inokashira Line, one stop from Shibuya. Saturday: Jazzy Sport (2-19-17 3F) from 14:00. Flash Disc Ranch (2-12-16 2F) from 14:30, closed Wed. City Country City (2-12-13 4F) cafe + bins, closed Wed. Pianola in Bonus Track (Daita 2-36-13) 14:00–21:00, closed Thu. Kankyō Records is the other way — Den-en-toshi to Sangenjaya, then ~10 min to Kamiuma 1-35-13, 13:00–18:00, irregular days off.",
       },
       {
         time: "Meal in the tower",
@@ -119,7 +133,7 @@ export const days = [
         title: "Shinjuku block (Yamanote)",
         kind: "food",
         detail:
-          "Give Shinjuku its own evening — Tokyo Metropolitan Government Building (free observatory views), then Omoide Yokocho, Kabukicho, and Golden Gai. Yamanote Line is the easy hop from Shibuya.",
+          "Give Shinjuku its own evening — Tokyo Metropolitan Government Building (free observatory views), then Omoide Yokocho, Kabukicho, and Golden Gai. Yamanote Line is the easy hop from Shibuya. Disk Union Shinjuku (Yamada Bldg, 3-31-4, a floor per genre) closes at 20:00 on Saturday — hop back before 8 if you want it. The bars are after that.",
       },
     ],
   },
@@ -609,7 +623,8 @@ export const days = [
         time: "Today",
         title: "Souvenir shopping & packing",
         kind: "shop",
-        detail: "Last-minute gifts, packing, and revisiting favorite spots.",
+        detail:
+          "Last-minute gifts, packing, and revisiting favorite spots. If Saturday's crate dig was too full, Shibuya and Shimokitazawa record shops are open Tuesday afternoon, and Disk Union Shinjuku runs 12:00–20:00. Discland Jaro is closed Tuesday. Kankyō Records takes irregular days off — check before the Sangenjaya hop.",
       },
     ],
   },

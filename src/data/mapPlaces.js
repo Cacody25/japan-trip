@@ -8,6 +8,7 @@ export const PLACE_KINDS = {
   poke: { label: "Poke!", color: "#F5C842" },
   watch: { label: "Watch shops", color: "#E0B04A" },
   skin: { label: "Skin", color: "#7EC8C3" },
+  record: { label: "Records", color: "#F07A28" },
 };
 
 const ALL_DAYS = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13];
@@ -164,15 +165,6 @@ export const mapPlaces = [
     kind: "nature",
     lat: 35.6616,
     lng: 139.7013,
-  },
-  {
-    id: "tower-records-shibuya",
-    name: "Tower Records Shibuya",
-    area: "Shibuya",
-    days: [2],
-    kind: "shop",
-    lat: 35.6605,
-    lng: 139.6988,
   },
   {
     id: "d47-museum",
