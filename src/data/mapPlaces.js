@@ -10,6 +10,8 @@ export const PLACE_KINDS = {
   skin: { label: "Skin", color: "#7EC8C3" },
   record: { label: "Records", color: "#F07A28" },
   bookoff: { label: "Book Off", color: "#8FB4E8" },
+  shrine: { label: "Shrine", color: "#C5364A" },
+  temple: { label: "Temple", color: "#8C6A4A" },
 };
 
 const ALL_DAYS = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13];
@@ -672,7 +674,7 @@ export const mapPlaces = [
     id: "hanazono-shrine",
     name: "Hanazono Shrine",
     area: "Shinjuku",
-    days: [6],
+    days: [2, 6],
     kind: "sight",
     lat: 35.6936,
     lng: 139.7052,

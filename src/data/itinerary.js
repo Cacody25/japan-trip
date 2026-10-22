@@ -54,7 +54,7 @@ export const days = [
         time: "12:00 PM",
         title: "Harajuku & Cat Street",
         kind: "shop",
-        detail: "Takeshita Street and the boutique-lined Cat Street.",
+        detail: "Takeshita Street and the boutique-lined Cat Street. Togo Shrine is the gate at the top of Takeshita.",
         items: [
           "Street food — Le Shiner: rainbow cheese sandwich (Takeshita Street)",
           "Street food — Totti Candy Factory: rainbow cotton candy (Takeshita Street)",
@@ -81,6 +81,7 @@ export const days = [
         items: [
           "Views & parks — Shibuya Sky, Miyashita Park",
           "Icons — Shibuya Scramble Crossing, Hachiko Statue",
+          "Shrine — Konno Hachimangu, about 5 minutes up the slope behind the scramble",
           "Shopping & culture — Tower Records (vinyl on 6F), d47 Museum, Shibuya 109",
           "Book Off — Rehello Kamiyama, ~10 min from Hachiko toward the park, 11:00–19:30",
           "Poke! — Pokémon Center SHIBUYA (Shibuya PARCO 6F)",
@@ -134,7 +135,7 @@ export const days = [
         title: "Shinjuku block (Yamanote)",
         kind: "food",
         detail:
-          "Give Shinjuku its own evening — Tokyo Metropolitan Government Building (free observatory views), then Omoide Yokocho, Kabukicho, and Golden Gai. Yamanote Line is the easy hop from Shibuya. BOOKOFF PLUS Shinjuku West (110 Bldg 3–6F) is open until 22:00. Disk Union Shinjuku (Yamada Bldg, 3-31-4, a floor per genre) closes at 20:00 on Saturday — hop back before 8 if you want it. The bars are after that.",
+          "Give Shinjuku its own evening — Tokyo Metropolitan Government Building (free observatory views), then Omoide Yokocho, Kabukicho, and Golden Gai. Hanazono Shrine is the vermilion gate directly behind Golden Gai. Yamanote Line is the easy hop from Shibuya. BOOKOFF PLUS Shinjuku West (110 Bldg 3–6F) is open until 22:00. Disk Union Shinjuku (Yamada Bldg, 3-31-4, a floor per genre) closes at 20:00 on Saturday — hop back before 8 if you want it. The bars are after that.",
       },
     ],
   },
@@ -231,7 +232,7 @@ export const days = [
           "Retro & pop culture — Mandarake Complex, Super Potato, Radio Kaikan, Radio Center (1-14-2 Sotokanda — electronics under the tracks), Don Quijote, Yodobashi Camera, BOOKOFF Akihabara Station (1 min from the central gate, 10:00–22:00)",
           "TCG shops — Hareruya 2, Magi Akihabara, Fukufuku, Taro, Card Secret, Valuable Card Tokyo, Trading Card Shop YK",
           "Watch shops — VIN Time (Ginza), Mizutani Camera (Akihabara)",
-          "Culture & solo spot — Hanabusa Inari Shrine, Dashiya (solo dashi / ochazuke)",
+          "Culture & solo spot — Hanabusa Inari Shrine, Kanda Myojin (the big shrine 5 min north), Dashiya (solo dashi / ochazuke)",
         ],
       },
       {
@@ -290,7 +291,7 @@ export const days = [
         time: "9:00 AM",
         title: "Market breakfast",
         kind: "food",
-        detail: "Start at Toyosu Market or the Tsukiji Outer Market.",
+        detail: "Start at Toyosu Market or the Tsukiji Outer Market. If you pick Tsukiji, Namiyoke Inari is in the stalls and Tsukiji Hongan-ji is the temple across the street.",
       },
       {
         time: "Daytime",
@@ -327,7 +328,7 @@ export const days = [
         detail:
           "6-22-7 Shinbashi — Korean BBQ house near Onarimon (Exit A3b, ~3 min), right by Tokyo Tower. Miyazaki wagyu skirt steak + secret sauce · dinner course ¥5,000–7,000 · AYCE drinks +¥2,000. Tue dinner 17:00–22:00 · closed Mon/Sun/holidays.",
       },
-      { time: "Evening", title: "Tokyo Tower", kind: "sight", detail: "Nighttime views over the city — short hop from Onarimon / New Myondon." },
+      { time: "Evening", title: "Tokyo Tower", kind: "sight", detail: "Nighttime views over the city — short hop from Onarimon / New Myondon. Zojo-ji is the temple at the foot of the tower." },
       {
         time: "If nearby",
         title: "Skin — Roppongi & Motoazabu",
@@ -426,9 +427,9 @@ export const days = [
         title: "Yanaka + Yanaka Ginza + Nezu Shrine",
         kind: "sight",
         detail:
-          "Quieter Tokyo — tiny shops, cafés, bakeries, cat statues on Yanaka Ginza, then Nezu Shrine’s red torii tunnel. Chiyoda Line to Sendagi or Nezu; explore on foot.",
+          "Quieter Tokyo — tiny shops, cafés, bakeries, cat statues on Yanaka Ginza, then Nezu Shrine’s red torii tunnel. Tenno-ji is the temple beside Yanaka Cemetery. Chiyoda Line to Sendagi or Nezu; explore on foot.",
       },
-      { time: "Late morning", title: "Ueno Park & Tokyo National Museum", kind: "sight" },
+      { time: "Late morning", title: "Ueno Park & Tokyo National Museum", kind: "sight", detail: "Ueno Toshogu and the Benten hall on Shinobazu Pond are both inside the park." },
       {
         time: "11:30 AM",
         title: "Ameyoko Market street food walk",
@@ -451,7 +452,7 @@ export const days = [
         time: "1:30 PM",
         title: "Asakusa: Senso-ji & Kaminarimon",
         kind: "sight",
-        detail: "The Thunder Gate and temple grounds — matcha treats at Chacha Futatsume. Start early if you want the temple before the crowds.",
+        detail: "The Thunder Gate and temple grounds — matcha treats at Chacha Futatsume. Asakusa Shrine is the Shinto shrine beside the main hall (that one is where you clap). Start early if you want the temple before the crowds.",
       },
       {
         time: "Note",
