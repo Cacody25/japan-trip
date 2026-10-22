@@ -82,6 +82,7 @@ export const days = [
           "Views & parks — Shibuya Sky, Miyashita Park",
           "Icons — Shibuya Scramble Crossing, Hachiko Statue",
           "Shopping & culture — Tower Records (vinyl on 6F), d47 Museum, Shibuya 109",
+          "Book Off — Rehello Kamiyama, ~10 min from Hachiko toward the park, 11:00–19:30",
           "Poke! — Pokémon Center SHIBUYA (Shibuya PARCO 6F)",
           "Watch spot — Shellman (Shibuya)",
         ],
@@ -98,7 +99,7 @@ export const days = [
         title: "Shimokitazawa & Sangenjaya records",
         kind: "shop",
         detail:
-          "Inokashira Line, one stop from Shibuya. Saturday: Jazzy Sport (2-19-17 3F) from 14:00. Flash Disc Ranch (2-12-16 2F) from 14:30, closed Wed. City Country City (2-12-13 4F) cafe + bins, closed Wed. Pianola in Bonus Track (Daita 2-36-13) 14:00–21:00, closed Thu. Kankyō Records is the other way — Den-en-toshi to Sangenjaya, then ~10 min to Kamiuma 1-35-13, 13:00–18:00, irregular days off.",
+          "Inokashira Line, one stop from Shibuya. Saturday: Jazzy Sport (2-19-17 3F) from 14:00. Flash Disc Ranch (2-12-16 2F) from 14:30, closed Wed. City Country City (2-12-13 4F) cafe + bins, closed Wed. Pianola in Bonus Track (Daita 2-36-13) 14:00–21:00, closed Thu. Rehello Book Off is at the north exit until 19:30. Kankyō Records is the other way — Den-en-toshi to Sangenjaya, then ~10 min to Kamiuma 1-35-13, 13:00–18:00, irregular days off.",
       },
       {
         time: "Meal in the tower",
@@ -133,7 +134,7 @@ export const days = [
         title: "Shinjuku block (Yamanote)",
         kind: "food",
         detail:
-          "Give Shinjuku its own evening — Tokyo Metropolitan Government Building (free observatory views), then Omoide Yokocho, Kabukicho, and Golden Gai. Yamanote Line is the easy hop from Shibuya. Disk Union Shinjuku (Yamada Bldg, 3-31-4, a floor per genre) closes at 20:00 on Saturday — hop back before 8 if you want it. The bars are after that.",
+          "Give Shinjuku its own evening — Tokyo Metropolitan Government Building (free observatory views), then Omoide Yokocho, Kabukicho, and Golden Gai. Yamanote Line is the easy hop from Shibuya. BOOKOFF PLUS Shinjuku West (110 Bldg 3–6F) is open until 22:00. Disk Union Shinjuku (Yamada Bldg, 3-31-4, a floor per genre) closes at 20:00 on Saturday — hop back before 8 if you want it. The bars are after that.",
       },
     ],
   },
@@ -227,7 +228,7 @@ export const days = [
         title: "Akihabara: otaku, TCG & watch hunt",
         kind: "tcg",
         items: [
-          "Retro & pop culture — Mandarake Complex, Super Potato, Radio Kaikan, Radio Center (1-14-2 Sotokanda — electronics under the tracks), Don Quijote, Yodobashi Camera",
+          "Retro & pop culture — Mandarake Complex, Super Potato, Radio Kaikan, Radio Center (1-14-2 Sotokanda — electronics under the tracks), Don Quijote, Yodobashi Camera, BOOKOFF Akihabara Station (1 min from the central gate, 10:00–22:00)",
           "TCG shops — Hareruya 2, Magi Akihabara, Fukufuku, Taro, Card Secret, Valuable Card Tokyo, Trading Card Shop YK",
           "Watch shops — VIN Time (Ginza), Mizutani Camera (Akihabara)",
           "Culture & solo spot — Hanabusa Inari Shrine, Dashiya (solo dashi / ochazuke)",
@@ -364,7 +365,7 @@ export const days = [
         title: "Ikebukuro — Star Wars + Pokémon MEGA TOKYO + Hinata",
         kind: "shop",
         detail:
-          "STAR WARS STORE by BENELIC (PARCO Main 6F) · Pokémon Center MEGA TOKYO & Pikachu Sweets (Sunshine City alpa 2F) · Gyukatsu Motomura one floor up (Alpa 3F, 11:00–22:00) · dinner alt Yakiton Hinata West Exit (First Bldg 2F, Exit C3 — daily 16:00–23:00). ~10 min Fukutoshin from Higashi-Shinjuku.",
+          "STAR WARS STORE by BENELIC (PARCO Main 6F) · Pokémon Center MEGA TOKYO & Pikachu Sweets (Sunshine City alpa 2F) · Gyukatsu Motomura one floor up (Alpa 3F, 11:00–22:00) · BOOKOFF on Sunshine 60 Street (Humax Pavilion, 10:00–22:00) · dinner alt Yakiton Hinata West Exit (First Bldg 2F, Exit C3 — daily 16:00–23:00). ~10 min Fukutoshin from Higashi-Shinjuku.",
       },
       {
         time: "Stops 1–10",
@@ -432,7 +433,13 @@ export const days = [
         time: "11:30 AM",
         title: "Ameyoko Market street food walk",
         kind: "food",
-        items: ["Takoyaki — octopus balls", "Yakitori — grilled chicken skewers", "Taiyaki — fish-shaped sweet bean pastry"],
+        items: [
+          "Takoyaki — octopus balls",
+          "Yakitori — grilled chicken skewers",
+          "Taiyaki — fish-shaped sweet bean pastry",
+          "BOOKOFF PLUS Ueno Hirokoji (Ueno 4-4-4, 10:00–22:00) — on this walk",
+          "BOOKOFF Asakusa Inaricho (10:00–21:00) — Ginza Line stop between Ueno and Senso-ji",
+        ],
       },
       {
         time: "12:30 PM",
@@ -631,7 +638,7 @@ export const days = [
         title: "Souvenir shopping & packing",
         kind: "shop",
         detail:
-          "Last-minute gifts, packing, and revisiting favorite spots. If Saturday's crate dig was too full, Shibuya and Shimokitazawa record shops are open Tuesday afternoon, and Disk Union Shinjuku runs 12:00–20:00. Discland Jaro is closed Tuesday. Kankyō Records takes irregular days off — check before the Sangenjaya hop.",
+          "Last-minute gifts, packing, and revisiting favorite spots. If Saturday's crate dig was too full, Shibuya and Shimokitazawa record shops are open Tuesday afternoon, and Disk Union Shinjuku runs 12:00–20:00. Rehello Book Off at Shimokitazawa north exit is open until 19:30. Discland Jaro is closed Tuesday. Kankyō Records takes irregular days off — check before the Sangenjaya hop.",
       },
       {
         time: "Dinner",

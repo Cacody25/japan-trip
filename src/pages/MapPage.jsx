@@ -11,81 +11,49 @@ import { barMapPlaces } from "@/data/bars";
 import { pokeMapPlaces } from "@/data/poke";
 import { skinMapPlaces } from "@/data/skin";
 import { recordMapPlaces } from "@/data/records";
+import { bookOffMapPlaces } from "@/data/bookoffs";
 import { days as itineraryDays } from "@/data/itinerary";
 import { cn } from "@/lib/utils";
 
-const allPlaces = [
-  ...mapPlaces,
-  ...foodMapPlaces,
-  ...momAndPopMapPlaces,
-  ...jazzCafeMapPlaces,
-  ...barMapPlaces,
-  ...pokeMapPlaces,
-  ...skinMapPlaces,
-  ...recordMapPlaces,
+const LAYERS = [
+  { id: "food", label: "Food!", places: foodMapPlaces },
+  { id: "mom", label: "Mom+Pop", places: momAndPopMapPlaces },
+  { id: "jazz", label: "Jazz", places: jazzCafeMapPlaces },
+  { id: "bars", label: "Bars", places: barMapPlaces },
+  { id: "poke", label: "Poke!", places: pokeMapPlaces },
+  { id: "skin", label: "Skin", places: skinMapPlaces },
+  { id: "records", label: "Records!", places: recordMapPlaces },
+  { id: "bookoff", label: "Book Off", places: bookOffMapPlaces },
 ];
 
-function isFoodPlace(place) {
-  return place.optionalFood || place.momAndPop || place.kind === "food";
-}
+const INITIAL_LAYERS = Object.fromEntries(LAYERS.map((layer) => [layer.id, true]));
 
 export default function MapPage() {
-  const [active, setActive] = useState("all");
-  const [hideFood, setHideFood] = useState(false);
+  const [day, setDay] = useState("all");
+  const [layers, setLayers] = useState(INITIAL_LAYERS);
   const scrollerRef = useRef(null);
   const [canScrollLeft, setCanScrollLeft] = useState(false);
   const [canScrollRight, setCanScrollRight] = useState(true);
 
-  const dayOptions = useMemo(() => itineraryDays.map((day) => day.n), []);
+  const dayOptions = useMemo(
+    () => [{ value: "all", label: "All days" }, ...itineraryDays.map((item) => ({ value: item.n, label: `Day ${item.n}` }))],
+    [],
+  );
 
   const shown = useMemo(() => {
-    let places;
-    if (active === "all") places = allPlaces;
-    else if (active === "food") places = foodMapPlaces;
-    else if (active === "mom") places = momAndPopMapPlaces;
-    else if (active === "jazz") places = jazzCafeMapPlaces;
-    else if (active === "bars") places = barMapPlaces;
-    else if (active === "poke") places = pokeMapPlaces;
-    else if (active === "skin") places = skinMapPlaces;
-    else if (active === "records") places = recordMapPlaces;
-    else {
-      places = [
-        ...mapPlaces.filter((place) => place.days.includes(active)),
-        ...pokeMapPlaces.filter((place) => place.days.includes(active)),
-        ...jazzCafeMapPlaces.filter((place) => place.days.includes(active)),
-        ...foodMapPlaces.filter((place) => place.days.includes(active)),
-        ...momAndPopMapPlaces.filter((place) => place.days.includes(active)),
-        ...skinMapPlaces.filter((place) => place.days.includes(active)),
-        ...barMapPlaces.filter((place) => place.days.includes(active)),
-        ...recordMapPlaces.filter((place) => place.days.includes(active)),
-      ];
-    }
+    const onThisDay = (place) => day === "all" || place.days.includes(day);
+    const base = mapPlaces.filter((place) => {
+      if (!onThisDay(place)) return false;
+      if (!layers.food && place.kind === "food") return false;
+      return true;
+    });
+    const extras = LAYERS.flatMap((layer) => (layers[layer.id] ? layer.places.filter(onThisDay) : []));
+    return [...base, ...extras];
+  }, [day, layers]);
 
-    if (hideFood && active !== "food" && active !== "mom") {
-      places = places.filter((place) => !isFoodPlace(place));
-    }
-    return places;
-  }, [active, hideFood]);
-
-  const selectFilter = (value) => {
-    setActive(value);
-    if (value === "food" || value === "mom") setHideFood(false);
+  const toggleLayer = (id) => {
+    setLayers((prev) => ({ ...prev, [id]: !prev[id] }));
   };
-
-  const options = useMemo(
-    () => [
-      { value: "all", label: "All" },
-      { value: "food", label: "Food!" },
-      { value: "mom", label: "Mom+Pop" },
-      { value: "jazz", label: "Jazz" },
-      { value: "bars", label: "Bars" },
-      { value: "poke", label: "Poke!" },
-      { value: "skin", label: "Skin" },
-      { value: "records", label: "Records!" },
-      ...dayOptions.map((day) => ({ value: day, label: `Day ${day}` })),
-    ],
-    [dayOptions],
-  );
 
   const updateScrollState = useCallback(() => {
     const el = scrollerRef.current;
@@ -128,7 +96,7 @@ export default function MapPage() {
       window.removeEventListener("resize", schedule);
       observer.disconnect();
     };
-  }, [updateScrollState, options.length]);
+  }, [updateScrollState, dayOptions.length]);
 
   const scrollByAmount = (direction) => {
     const el = scrollerRef.current;
@@ -141,7 +109,7 @@ export default function MapPage() {
       <SectionHeading
         eyebrow="Reference"
         title="Map"
-        subtitle="Planned stops plus Food!, Mom+Pop, Jazz, Bars, Poke!, Skin, and Records! — tap a dot to see what's there. Positions are approximate, for orientation."
+        subtitle="All days, or one day. Each row of switches turns a list on or off without hiding the sights. Positions are approximate, for orientation."
       />
 
       <div className="sticky top-0 z-30 mt-5 border-b border-white/[0.06] bg-background/85 px-5 py-3 backdrop-blur-xl md:px-8">
@@ -162,13 +130,13 @@ export default function MapPage() {
             ref={scrollerRef}
             className="flex min-w-0 flex-1 gap-2 overflow-x-auto overscroll-x-contain pb-1 [scrollbar-width:thin]"
           >
-            {options.map((option) => (
+            {dayOptions.map((option) => (
               <button
                 key={option.value}
-                onClick={() => selectFilter(option.value)}
+                onClick={() => setDay(option.value)}
                 className={cn(
                   "shrink-0 rounded-full border px-3.5 py-1.5 text-[10.5px] uppercase tracking-[0.14em] transition-colors",
-                  active === option.value
+                  day === option.value
                     ? "border-vermilion/60 bg-vermilion/15 text-foreground"
                     : "border-white/10 text-muted-foreground hover:text-foreground/80",
                 )}
@@ -176,19 +144,6 @@ export default function MapPage() {
                 {option.label}
               </button>
             ))}
-            <button
-              type="button"
-              onClick={() => setHideFood((prev) => !prev)}
-              aria-pressed={hideFood}
-              className={cn(
-                "shrink-0 rounded-full border px-3.5 py-1.5 text-[10.5px] uppercase tracking-[0.14em] transition-colors",
-                hideFood
-                  ? "border-gold/50 bg-gold/15 text-foreground"
-                  : "border-white/10 text-muted-foreground hover:text-foreground/80",
-              )}
-            >
-              Hide Food
-            </button>
           </div>
 
           <button
@@ -202,6 +157,24 @@ export default function MapPage() {
           >
             <ChevronRight className="h-4 w-4" strokeWidth={1.7} />
           </button>
+        </div>
+        <div className="mt-2 flex flex-wrap gap-2">
+          {LAYERS.map((layer) => (
+            <button
+              key={layer.id}
+              type="button"
+              aria-pressed={layers[layer.id]}
+              onClick={() => toggleLayer(layer.id)}
+              className={cn(
+                "rounded-full border px-3.5 py-1.5 text-[10.5px] uppercase tracking-[0.14em] transition-colors",
+                layers[layer.id]
+                  ? "border-gold/50 bg-gold/15 text-foreground"
+                  : "border-white/10 text-muted-foreground/50 line-through hover:text-foreground/80",
+              )}
+            >
+              {layer.label}
+            </button>
+          ))}
         </div>
       </div>
 

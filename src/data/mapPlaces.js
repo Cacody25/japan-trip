@@ -9,6 +9,7 @@ export const PLACE_KINDS = {
   watch: { label: "Watch shops", color: "#E0B04A" },
   skin: { label: "Skin", color: "#7EC8C3" },
   record: { label: "Records", color: "#F07A28" },
+  bookoff: { label: "Book Off", color: "#8FB4E8" },
 };
 
 const ALL_DAYS = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13];
@@ -636,16 +637,6 @@ export const mapPlaces = [
     lat: 35.6928,
     lng: 139.7026,
     note: "Stop 6 — Large authenticated pre-owned watch floors.",
-  },
-  {
-    id: "bookoff-shinjuku-west",
-    name: "BOOKOFF SUPER BAZAAR Shinjuku West Exit",
-    area: "Nishi-Shinjuku",
-    days: [6],
-    kind: "shop",
-    lat: 35.6905,
-    lng: 139.6992,
-    note: "Stop 7 — Used trading cards, vintage games, and second-hand figures.",
   },
   {
     id: "yellow-submarine-shinjuku",
