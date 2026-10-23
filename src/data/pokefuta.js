@@ -3,7 +3,7 @@
 export const pokefutaSpots = [
   {
     id: "pokefuta-kahaku",
-    name: "Pokéfuta — Chigoras & Soanano",
+    name: "Pokéfuta — Tyrunt & Amaura",
     area: "Ueno Park",
     address: "National Museum of Nature and Science, 7-20 Ueno Park, Taito-ku",
     access: "Outside, in front of the life-size blue whale · about 5 minutes from JR Ueno Park Exit",
@@ -14,7 +14,7 @@ export const pokefutaSpots = [
   },
   {
     id: "pokefuta-tnm",
-    name: "Pokéfuta — Yajiron & Domirror",
+    name: "Pokéfuta — Baltoy & Claydol",
     area: "Ueno Park",
     address: "Tokyo National Museum main gate, 13-9 Ueno Park, Taito-ku",
     note: "In the pavement at the front gate, before the ticket booth. A few minutes across the park from the whale.",
@@ -35,7 +35,7 @@ export const pokefutaSpots = [
   },
   {
     id: "pokefuta-nippon-maru",
-    name: "Pokéfuta — Pikachu, Koduck & Wanriky",
+    name: "Pokéfuta — Pikachu, Psyduck & Machop",
     area: "Yokohama / Nippon Maru",
     address: "Nippon Maru Memorial Park, 2-1-1 Minato Mirai, Nishi-ku, Yokohama",
     access: "By the sailing ship, next to the Cup Noodles Museum",
@@ -46,7 +46,7 @@ export const pokefutaSpots = [
   },
   {
     id: "pokefuta-rinko",
-    name: "Pokéfuta — Pikachu, Victini & Gonbe",
+    name: "Pokéfuta — Pikachu, Victini & Munchlax",
     area: "Yokohama / Rinko Park",
     address: "Rinko Park, Minato Mirai 1-chome, Nishi-ku, Yokohama",
     access: "On the waterfront park between the Ferris wheel and the red-brick warehouses",
