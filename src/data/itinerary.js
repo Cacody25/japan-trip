@@ -429,7 +429,7 @@ export const days = [
         detail:
           "Quieter Tokyo — tiny shops, cafés, bakeries, cat statues on Yanaka Ginza, then Nezu Shrine’s red torii tunnel. Tenno-ji is the temple beside Yanaka Cemetery. Chiyoda Line to Sendagi or Nezu; explore on foot.",
       },
-      { time: "Late morning", title: "Ueno Park & Tokyo National Museum", kind: "sight", detail: "Ueno Toshogu and the Benten hall on Shinobazu Pond are both inside the park." },
+      { time: "Late morning", title: "Ueno Park & Tokyo National Museum", kind: "sight", detail: "Ueno Toshogu and the Benten hall on Shinobazu Pond are both inside the park. Two Pokémon manholes are on the ground here: Chigoras & Soanano in front of the blue whale at the science museum, and Yajiron & Domirror at the Tokyo National Museum gate. Both are outside." },
       {
         time: "11:30 AM",
         title: "Ameyoko Market street food walk",
@@ -508,6 +508,7 @@ export const days = [
           "Cup Noodles Museum",
           "Poke! — Pokémon Center YOKOHAMA (Sky Building 8F)",
           "Poke! — Pokémon Center YOKOHAMA SATELLITE (JOINUS 2F)",
+          "Pokéfuta — Pikachu lids at Sakuragicho plaza, Nippon Maru (by Cup Noodles), Rinko Park, and the red-brick warehouses. Marine Tower is further, toward Yamashita.",
         ],
       },
       {

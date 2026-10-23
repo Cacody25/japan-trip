@@ -9,6 +9,7 @@ import { momAndPopMapPlaces } from "@/data/momAndPop";
 import { jazzCafeMapPlaces } from "@/data/jazzCafes";
 import { barMapPlaces } from "@/data/bars";
 import { pokeMapPlaces } from "@/data/poke";
+import { pokefutaMapPlaces } from "@/data/pokefuta";
 import { skinMapPlaces } from "@/data/skin";
 import { recordMapPlaces } from "@/data/records";
 import { bookOffMapPlaces } from "@/data/bookoffs";
@@ -21,7 +22,7 @@ const LAYERS = [
   { id: "mom", label: "Mom+Pop", places: momAndPopMapPlaces },
   { id: "jazz", label: "Jazz", places: jazzCafeMapPlaces },
   { id: "bars", label: "Bars", places: barMapPlaces },
-  { id: "poke", label: "Poke!", places: pokeMapPlaces },
+  { id: "poke", label: "Poke!", places: [...pokeMapPlaces, ...pokefutaMapPlaces] },
   { id: "skin", label: "Skin", places: skinMapPlaces },
   { id: "records", label: "Records!", places: recordMapPlaces },
   { id: "bookoff", label: "Book Off", places: bookOffMapPlaces },
