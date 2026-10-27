@@ -135,7 +135,7 @@ export const days = [
         title: "Shinjuku block (Yamanote)",
         kind: "food",
         detail:
-          "Give Shinjuku its own evening — Tokyo Metropolitan Government Building (free observatory views), then Omoide Yokocho, Kabukicho, and Golden Gai. Hanazono Shrine is the vermilion gate directly behind Golden Gai. Yamanote Line is the easy hop from Shibuya. BOOKOFF PLUS Shinjuku West (110 Bldg 3–6F) is open until 22:00. Disk Union Shinjuku (Yamada Bldg, 3-31-4, a floor per genre) closes at 20:00 on Saturday — hop back before 8 if you want it. The bars are after that.",
+          "Give Shinjuku its own evening — Tokyo Metropolitan Government Building (free observatory views), then Omoide Yokocho, Kabukicho, and Golden Gai. Hanazono Shrine is the vermilion gate directly behind Golden Gai. Yamanote Line is the easy hop from Shibuya. BOOKOFF PLUS Shinjuku West (110 Bldg 3–6F) is open until 22:00. Yodobashi West 2F has EG and HG Gunpla at MSRP if Akihabara is later; Yellow Submarine is next door. Disk Union Shinjuku (Yamada Bldg, 3-31-4, a floor per genre) closes at 20:00 on Saturday — hop back before 8 if you want it. The bars are after that.",
       },
     ],
   },
@@ -230,6 +230,7 @@ export const days = [
         kind: "tcg",
         items: [
           "Retro & pop culture — Mandarake Complex, Super Potato, Radio Kaikan, Radio Center (1-14-2 Sotokanda — electronics under the tracks), Don Quijote, Yodobashi Camera, BOOKOFF Akihabara Station (1 min from the central gate, 10:00–22:00)",
+          "Gunpla gifts — EG & HG: Yodobashi Akiba 6F first (MSRP + tax-free), then Bic Camera AKIBA 7F if shelves look thin. Yellow Submarine Radio Kaikan 6F and VOLKS Hobby Tengoku 2 for kits + nippers. Suruga-ya Plamodel (Chuo-dori) for sealed used HG bargains.",
           "TCG shops — Hareruya 2, Magi Akihabara, Fukufuku, Taro, Card Secret, Valuable Card Tokyo, Trading Card Shop YK",
           "Watch shops — VIN Time (Ginza), Mizutani Camera (Akihabara)",
           "Culture & solo spot — Hanabusa Inari Shrine, Kanda Myojin (the big shrine 5 min north), Dashiya (solo dashi / ochazuke)",
@@ -301,7 +302,7 @@ export const days = [
         items: [
           "teamLab Planets TOKYO (Shin-Toyosu) — book timed tickets ahead",
           "Odaiba Seaside Park (Odaiba Kaihin Koen)",
-          "DiverCity Tokyo Plaza — life-sized Unicorn Gundam Statue",
+          "DiverCity Tokyo Plaza — life-sized Unicorn Gundam Statue · THE GUNDAM BASE TOKYO on 7F (official EG & HG + exclusives, MSRP)",
           "Panasonic Center Tokyo & Miraikan — National Museum of Emerging Science and Innovation",
           "Fuji TV Building",
           "Tokyo Joypolis — indoor arcade and amusement park",
@@ -380,7 +381,8 @@ export const days = [
           "Housekihiroba Shinjuku — new and secondhand watches",
           "KOMEHYO Shinjuku — tourist-friendly pre-owned watch floors",
           "BOOKOFF SUPER BAZAAR Shinjuku Station West Exit — used cards, games, figures",
-          "Yellow Submarine Shinjuku Gameshop — TCG, model kits, board games",
+          "Yodobashi Shinjuku West 2F — EG & HG Gunpla at MSRP if you still need gift kits",
+          "Yellow Submarine Shinjuku — Gunpla, TCG, and model kits next to Yodobashi",
           "SURUGA-YA Shinjuku Marui Annex — retro games, anime goods, cards",
           "TCG ROYAL SHINJUKU — Pokémon and One Piece singles and sealed packs",
         ],
@@ -610,6 +612,7 @@ export const days = [
           "Renzu — pre-owned luxury and vintage",
           "Timezone — Swiss and international variety",
           "Universal Value — pre-owned luxury, 3rd floor",
+          "Gunpla — Mandarake Special 2 (used HG) and Baton Store (new EG/HG) in Broadway, quieter than Akihabara",
         ],
       },
       {

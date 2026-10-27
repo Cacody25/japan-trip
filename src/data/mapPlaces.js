@@ -12,6 +12,7 @@ export const PLACE_KINDS = {
   bookoff: { label: "Book Off", color: "#8FB4E8" },
   shrine: { label: "Shrine", color: "#C5364A" },
   temple: { label: "Temple", color: "#8C6A4A" },
+  gundam: { label: "Gundam", color: "#5B8DEF" },
 };
 
 const ALL_DAYS = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13];

@@ -1,7 +1,7 @@
 import React from "react";
 import { PLACE_KINDS } from "@/data/mapPlaces";
 
-const ORDER = ["stay", "sight", "nature", "shop", "food", "bar", "watch", "skin", "record", "bookoff", "shrine", "temple"];
+const ORDER = ["stay", "sight", "nature", "shop", "food", "bar", "watch", "skin", "record", "bookoff", "shrine", "temple", "gundam"];
 
 export default function MapLegend({ count }) {
   return (
