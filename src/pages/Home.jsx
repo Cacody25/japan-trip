@@ -23,24 +23,40 @@ function AppTile({ app, showLabel = true }) {
   );
 }
 
-export default function Home() {
-  const [now, setNow] = useState(() => new Date());
+const CLOCKS = [
+  { id: "local", label: "California", zone: "America/Los_Angeles" },
+  { id: "tokyo", label: "Tokyo", zone: "Asia/Tokyo" },
+];
 
-  useEffect(() => {
-    const id = window.setInterval(() => setNow(new Date()), 30_000);
-    return () => window.clearInterval(id);
-  }, []);
-
-  const time = new Intl.DateTimeFormat(undefined, {
+function formatClock(now, timeZone) {
+  const time = new Intl.DateTimeFormat("en-US", {
+    timeZone,
     hour: "numeric",
     minute: "2-digit",
   }).format(now);
 
-  const date = new Intl.DateTimeFormat(undefined, {
+  const weekday = new Intl.DateTimeFormat("en-US", {
+    timeZone,
     weekday: "long",
+  }).format(now);
+
+  const date = new Intl.DateTimeFormat("en-US", {
+    timeZone,
     month: "long",
     day: "numeric",
   }).format(now);
+
+  return { time, weekday, date };
+}
+
+export default function Home() {
+  const [now, setNow] = useState(() => new Date());
+
+  useEffect(() => {
+    const tick = () => setNow(new Date());
+    const id = window.setInterval(tick, 15_000);
+    return () => window.clearInterval(id);
+  }, []);
 
   return (
     <div className="relative min-h-[100dvh] overflow-hidden px-5 pb-8 pt-[max(1.5rem,env(safe-area-inset-top))]">
@@ -54,9 +70,22 @@ export default function Home() {
 
       <div className="relative mx-auto flex w-full max-w-[420px] flex-col">
         <header className="pt-6 text-center">
-          <p className="text-[52px] font-light leading-none tracking-tight text-foreground">{time}</p>
-          <p className="mt-2 text-[13px] text-muted-foreground">{date}</p>
-          <p className="mt-4 text-[10px] uppercase tracking-[0.28em] text-gold/85">{trip.name}</p>
+          <div className="grid grid-cols-2 gap-4">
+            {CLOCKS.map((clock) => {
+              const { time, weekday, date } = formatClock(now, clock.zone);
+              return (
+                <div key={clock.id} className="min-w-0">
+                  <p className="text-[10px] uppercase tracking-[0.22em] text-muted-foreground">{clock.label}</p>
+                  <p className="mt-2 text-[34px] font-light leading-none tracking-tight text-foreground tabular-nums sm:text-[38px]">
+                    {time}
+                  </p>
+                  <p className="mt-2.5 text-[12px] font-medium leading-tight text-foreground/90">{weekday}</p>
+                  <p className="mt-0.5 text-[12px] leading-tight text-muted-foreground">{date}</p>
+                </div>
+              );
+            })}
+          </div>
+          <p className="mt-5 text-[10px] uppercase tracking-[0.28em] text-gold/85">{trip.name}</p>
           <p className="mt-1 text-[12px] text-muted-foreground">{trip.range}</p>
         </header>
 
