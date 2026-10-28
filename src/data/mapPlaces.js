@@ -853,6 +853,16 @@ export const mapPlaces = [
     note: "Temple grounds — matcha treats at Chacha Futatsume.",
   },
   {
+    id: "mokuhankan",
+    name: "Mokuhankan Woodblock Print Shop",
+    area: "Asakusa",
+    days: [7],
+    kind: "shop",
+    lat: 35.7131,
+    lng: 139.794,
+    note: "Asakusa 1-41-8 · Roku-dori · 10:00–17:30, closed Tue · walk-in ukiyo-e prints, classic and modern. No appointment to browse and buy.",
+  },
+  {
     id: "kaminarimon",
     name: "Kaminarimon (Thunder Gate)",
     area: "Asakusa",

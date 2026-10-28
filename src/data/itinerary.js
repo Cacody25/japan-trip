@@ -471,6 +471,13 @@ export const days = [
         detail: "The Thunder Gate and temple grounds — matcha treats at Chacha Futatsume. Asakusa Shrine is the Shinto shrine beside the main hall (that one is where you clap).",
       },
       {
+        time: "~3:00 PM",
+        title: "Mokuhankan Woodblock Print Shop",
+        kind: "shop",
+        detail:
+          "Asakusa 1-41-8, south side of Roku-dori · ~1 min from TX Asakusa · 10:00–17:30, closed Tue. Walk-in ukiyo-e shop — classic reproductions and modern prints, souvenir prices up to high-end hand-printed. Browse the racks; no appointment needed to buy. Hands-on Print Parties are no longer offered.",
+      },
+      {
         time: "Note",
         title: "Kita-Senju café (closed today)",
         kind: "note",
