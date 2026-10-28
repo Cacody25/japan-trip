@@ -11,6 +11,7 @@ import JazzCafes from "@/pages/JazzCafes";
 import Bars from "@/pages/Bars";
 import Poke from "@/pages/Poke";
 import Halloween from "@/pages/Halloween";
+import Gifts from "@/pages/Gifts";
 import Entry from "@/pages/Entry";
 import Intro from "@/pages/Intro";
 import CheckIn from "@/pages/CheckIn";
@@ -37,10 +38,10 @@ function App() {
           <Route path="/bars" element={<Bars />} />
           <Route path="/poke" element={<Poke />} />
           <Route path="/halloween" element={<Halloween />} />
+          <Route path="/gifts" element={<Gifts />} />
           <Route path="/entry" element={<Entry />} />
           <Route path="/intro" element={<Intro />} />
           <Route path="/check-in" element={<CheckIn />} />
-
           <Route path="/map" element={<MapPage />} />
           <Route path="/notes" element={<Notes />} />
           <Route path="/translate" element={<Translate />} />

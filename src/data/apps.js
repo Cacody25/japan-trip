@@ -13,6 +13,7 @@ import {
   QrCode,
   UtensilsCrossed,
   HandHeart,
+  Gift,
   Map as MapIcon,
 } from "lucide-react";
 
@@ -77,6 +78,12 @@ export const appIcons = [
     label: "Halloween!",
     Icon: Ghost,
     color: "#F07A28",
+  },
+  {
+    to: "/gifts",
+    label: "Gifts!",
+    Icon: Gift,
+    color: "#E2A03F",
   },
   {
     to: "/check-in",
