@@ -80,12 +80,6 @@ export const appIcons = [
     color: "#F07A28",
   },
   {
-    to: "/gifts",
-    label: "Gifts!",
-    Icon: Gift,
-    color: "#E2A03F",
-  },
-  {
     to: "/check-in",
     label: "Check In!",
     Icon: Camera,
@@ -114,6 +108,12 @@ export const appIcons = [
     label: "Watches",
     Icon: Watch,
     color: "#E0B04A",
+  },
+  {
+    to: "/gifts",
+    label: "Gifts!",
+    Icon: Gift,
+    color: "#E2A03F",
   },
 ];
 
