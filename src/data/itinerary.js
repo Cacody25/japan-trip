@@ -131,11 +131,18 @@ export const days = [
           "All three are open Saturday night. JBS (Dogenzaka 1-17-10 2F) — jazz/blues/soul, cash, drinks ¥500, about 19:00–23:00. record bar 33 1/3rpm (Dogenzaka 1-6-2 B1) — opens ~19:30, last entry ~21:30–23:00; overseas travelers OK. CAVE (1-15-12 Shibuya B1) — 18:00–3:00, music charge ¥1,000.",
       },
       {
+        time: "If you hunt doors",
+        title: "Speak Easy — Shibuya & Ebisu",
+        kind: "food",
+        detail:
+          "LOST BAR (Grand Tokyo Shibuya 2F, Udagawa 33-1) — elevator to 2F, slide the wooden gacha bank to the right. Open Saturday to 23:00. Bar Trench (Ebisu-nishi 1-5-8 DIS 102) — tiny botanical cocktail den, daily 18:00–2:00, no reservations, one Yamanote stop or a walk from Shibuya.",
+      },
+      {
         time: "Later",
         title: "Shinjuku block (Yamanote)",
         kind: "food",
         detail:
-          "Give Shinjuku its own evening — Tokyo Metropolitan Government Building (free observatory views), then Omoide Yokocho, Kabukicho, and Golden Gai. Hanazono Shrine is the vermilion gate directly behind Golden Gai. Yamanote Line is the easy hop from Shibuya. BOOKOFF PLUS Shinjuku West (110 Bldg 3–6F) is open until 22:00. Yodobashi West 2F has EG and HG Gunpla at MSRP if Akihabara is later; Yellow Submarine is next door. Disk Union Shinjuku (Yamada Bldg, 3-31-4, a floor per genre) closes at 20:00 on Saturday — hop back before 8 if you want it. The bars are after that.",
+          "Give Shinjuku its own evening — Tokyo Metropolitan Government Building (free observatory views), then Omoide Yokocho, Kabukicho, and Golden Gai. Hanazono Shrine is the vermilion gate directly behind Golden Gai. Yamanote Line is the easy hop from Shibuya. BOOKOFF PLUS Shinjuku West (110 Bldg 3–6F) is open until 22:00. Yodobashi West 2F has EG and HG Gunpla at MSRP if Akihabara is later; Yellow Submarine is next door. Disk Union Shinjuku (Yamada Bldg, 3-31-4, a floor per genre) closes at 20:00 on Saturday — hop back before 8 if you want it. The bars are after that. Speak Easy: a BAR Sleeping Tales is the storybook basement by Shinjuku Gyoen (2-1-14, right B1 door) — open Sat from 17:00, cover ¥700. Secret Bar is the unmarked Shin-Okubo basement (Hyakunincho 1-15-19 Mars B1), late. KAKURETAI in Arakicho is closed Saturday.",
       },
     ],
   },
@@ -360,7 +367,7 @@ export const days = [
         title: "Shinjuku → Imperial Palace Loop walk",
         kind: "note",
         detail:
-          "15 stops from GLOU Higashi Shinjuku east to Chidorigafuchi. Everything is open by 11:00 AM — then a counter-clockwise 5 km Imperial Palace Loop with gate, bridge, and garden stops along the path.",
+          "15 stops from GLOU Higashi Shinjuku east to Chidorigafuchi. Everything is open by 11:00 AM — then a counter-clockwise 5 km Imperial Palace Loop with gate, bridge, and garden stops along the path. Speak Easy if you stay in Shinjuku: KAKURETAI (Arakicho 1-2 B1) is open Wednesday 20:00–24:00 — Saturday it is closed. Secret Bar in Shin-Okubo runs late. Sleeping Tales is closed Wednesday.",
       },
       {
         time: "Option C",
@@ -627,6 +634,13 @@ export const days = [
         kind: "shop",
         detail: "Nihombashi Takashimaya East 5F — short hop from Ginza watch hunting.",
       },
+      {
+        time: "If you want a nightcap",
+        title: "Speak Easy — Sleeping Tales",
+        kind: "food",
+        detail:
+          "Monday is open. a BAR Sleeping Tales (Shinjuku 2-1-14 B1, right door by Gyoen) 18:00–2:00, cover ¥700. On the way back toward Higashi-Shinjuku from Ginza / Nihombashi. KAKURETAI is closed Monday.",
+      },
     ],
   },
   {
@@ -650,7 +664,7 @@ export const days = [
         title: "Akasaka Shisen Hanten",
         kind: "food",
         detail:
-          "Zenkoku Ryokan Kaikan 5F/6F, 2-5-5 Hirakawacho — Chen Kenichi’s family restaurant, now run by his son Chen Kentaro. About 3 minutes from Nagatacho Exit 4. Tuesday dinner 17:00–22:00 (last order 21:00). Order Chen’s mapo tofu. Call 03-3263-9371 to reserve. Closed Mondays, so this night works. Eat and head back — you fly in the morning.",
+          "Zenkoku Ryokan Kaikan 5F/6F, 2-5-5 Hirakawacho — Chen Kenichi’s family restaurant, now run by his son Chen Kentaro. About 3 minutes from Nagatacho Exit 4. Tuesday dinner 17:00–22:00 (last order 21:00). Order Chen’s mapo tofu. Call 03-3263-9371 to reserve. Closed Mondays, so this night works. Eat and head back — you fly in the morning. Speak Easy nearby if you still have energy: KAKURETAI in Arakicho is open Tuesday 20:00–24:00, and Sleeping Tales by Gyoen is open too.",
       },
     ],
   },

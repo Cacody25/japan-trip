@@ -15,6 +15,7 @@ import { recordMapPlaces } from "@/data/records";
 import { bookOffMapPlaces } from "@/data/bookoffs";
 import { shrineMapPlaces, templeMapPlaces } from "@/data/shrines";
 import { gundamMapPlaces } from "@/data/gundam";
+import { speakeasyMapPlaces } from "@/data/speakeasy";
 import { days as itineraryDays } from "@/data/itinerary";
 import { cn } from "@/lib/utils";
 
@@ -30,6 +31,7 @@ const LAYERS = [
   { id: "shrine", label: "Shrines", places: shrineMapPlaces },
   { id: "temple", label: "Temples", places: templeMapPlaces },
   { id: "gundam", label: "Gundam", places: gundamMapPlaces },
+  { id: "speakeasy", label: "Speak Easy", places: speakeasyMapPlaces },
 ];
 
 const INITIAL_LAYERS = Object.fromEntries(LAYERS.map((layer) => [layer.id, true]));
