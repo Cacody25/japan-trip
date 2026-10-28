@@ -11,6 +11,7 @@ import {
   Languages,
   Watch,
   QrCode,
+  UtensilsCrossed,
   Map as MapIcon,
 } from "lucide-react";
 
@@ -87,6 +88,12 @@ export const appIcons = [
     label: "Phrases",
     Icon: Languages,
     color: "#E0B04A",
+  },
+  {
+    to: "/table",
+    label: "Table",
+    Icon: UtensilsCrossed,
+    color: "#E4573D",
   },
   {
     to: "/watches",

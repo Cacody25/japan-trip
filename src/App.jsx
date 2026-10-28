@@ -15,6 +15,7 @@ import Entry from "@/pages/Entry";
 import CheckIn from "@/pages/CheckIn";
 import Notes from "@/pages/Notes";
 import Translate from "@/pages/Translate";
+import Table from "@/pages/Table";
 import Watches from "@/pages/Watches";
 import MapPage from "@/pages/MapPage";
 
@@ -40,6 +41,7 @@ function App() {
           <Route path="/map" element={<MapPage />} />
           <Route path="/notes" element={<Notes />} />
           <Route path="/translate" element={<Translate />} />
+          <Route path="/table" element={<Table />} />
           <Route path="/watches" element={<Watches />} />
         </Route>
         <Route path="*" element={<PageNotFound />} />
