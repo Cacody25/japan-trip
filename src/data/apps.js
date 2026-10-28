@@ -111,5 +111,5 @@ export const appIcons = [
 ];
 
 export const dockApps = appIcons.filter(
-  (app) => app.to === "/map" || app.to === "/days" || app.to === "/entry" || app.to === "/poke",
+  (app) => app.to === "/map" || app.to === "/days" || app.to === "/intro" || app.to === "/poke",
 );
