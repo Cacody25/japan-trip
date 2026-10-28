@@ -3,12 +3,14 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import PageNotFound from "./lib/PageNotFound";
 import ScrollToTop from "./components/ScrollToTop";
 import Layout from "@/components/Layout";
+import Home from "@/pages/Home";
 import Days from "@/pages/Days";
 import Food from "@/pages/Food";
 import MomAndPop from "@/pages/MomAndPop";
 import JazzCafes from "@/pages/JazzCafes";
 import Bars from "@/pages/Bars";
 import Poke from "@/pages/Poke";
+import Halloween from "@/pages/Halloween";
 import CheckIn from "@/pages/CheckIn";
 import Notes from "@/pages/Notes";
 import Translate from "@/pages/Translate";
@@ -24,12 +26,14 @@ function App() {
       <ScrollToTop />
       <Routes>
         <Route element={<Layout />}>
-          <Route path="/" element={<Days />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/days" element={<Days />} />
           <Route path="/food" element={<Food />} />
           <Route path="/mom-and-pop" element={<MomAndPop />} />
           <Route path="/jazz-cafes" element={<JazzCafes />} />
           <Route path="/bars" element={<Bars />} />
           <Route path="/poke" element={<Poke />} />
+          <Route path="/halloween" element={<Halloween />} />
           <Route path="/check-in" element={<CheckIn />} />
           <Route path="/map" element={<MapPage />} />
           <Route path="/notes" element={<Notes />} />

@@ -458,6 +458,15 @@ export const days = [
         detail: "Professional Japanese chef knives and kitchen goods.",
       },
       {
+        time: "If nearby",
+        title: "Coin ring workshops (Taito)",
+        kind: "shop",
+        items: [
+          "COIN LUCK Tokyo — ROUTE89 3F, Higashi-Ueno 4-13-9 · JR Ueno Iriya Exit ~5 min · 10:00–19:00, closed Tue · hammer a real coin into a ring, or buy one ready-made · book on LINE if you want a seat",
+          "RAGTIME COIN FACTORY — Kotobuki 1-16-1 1F · Tawaramachi Exit 2 ~5 min (between Kappabashi and Asakusa) · 10:00–19:00 · private booth, keep the coin’s motifs · from ¥6,500 / 60–90 min · reserve ahead",
+        ],
+      },
+      {
         time: "1:30 PM",
         title: "Asakusa: Senso-ji & Kaminarimon",
         kind: "sight",
