@@ -30,8 +30,8 @@ export const tableMoments = [
   {
     id: "after",
     when: "After the meal",
-    do: "Say this to the waiter or chef as you leave — the thank-you for the meal.",
-    en: "Thank you for the meal",
+    do: "Say this to the waiter or chef as you leave. Literally “it was a feast” — the polite thank-you that closes the meal (pairs with itadakimasu at the start).",
+    en: "Thank you for the meal (it was a feast)",
     jp: "ごちそうさまでした",
     romaji: "Gochisōsama deshita",
     say: "go-chee-soh-sah-mah desh-tah",
