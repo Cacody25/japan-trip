@@ -453,24 +453,22 @@ export const days = [
       },
       {
         time: "12:30 PM",
+        title: "COIN LUCK Tokyo — booked",
+        kind: "shop",
+        detail:
+          "ROUTE89 BLDG. 3F, 4-13-9 Higashi-Ueno · JR Ueno Iriya Exit ~5 min. Session at 12:30 — hammer a coin into a ring (~60–90 min). Arrive a few minutes early. Alt nearby if you ever want a second shop: RAGTIME COIN FACTORY in Kotobuki (Tawaramachi ~5 min).",
+      },
+      {
+        time: "After (~2:00–2:30 PM)",
         title: "Kappabashi Kitchenware Street",
         kind: "shop",
-        detail: "Professional Japanese chef knives and kitchen goods.",
+        detail: "Professional Japanese chef knives and kitchen goods — short hop toward Asakusa after Coin Luck.",
       },
       {
-        time: "If nearby",
-        title: "Coin ring workshops (Taito)",
-        kind: "shop",
-        items: [
-          "COIN LUCK Tokyo — ROUTE89 3F, Higashi-Ueno 4-13-9 · JR Ueno Iriya Exit ~5 min · 10:00–19:00, closed Tue · hammer a real coin into a ring, or buy one ready-made · book on LINE if you want a seat",
-          "RAGTIME COIN FACTORY — Kotobuki 1-16-1 1F · Tawaramachi Exit 2 ~5 min (between Kappabashi and Asakusa) · 10:00–19:00 · private booth, keep the coin’s motifs · from ¥6,500 / 60–90 min · reserve ahead",
-        ],
-      },
-      {
-        time: "1:30 PM",
+        time: "Afternoon",
         title: "Asakusa: Senso-ji & Kaminarimon",
         kind: "sight",
-        detail: "The Thunder Gate and temple grounds — matcha treats at Chacha Futatsume. Asakusa Shrine is the Shinto shrine beside the main hall (that one is where you clap). Start early if you want the temple before the crowds.",
+        detail: "The Thunder Gate and temple grounds — matcha treats at Chacha Futatsume. Asakusa Shrine is the Shinto shrine beside the main hall (that one is where you clap).",
       },
       {
         time: "Note",

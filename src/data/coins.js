@@ -7,7 +7,7 @@ export const coinShops = [
     address: "ROUTE89 BLDG. 3F, 4-13-9 Higashi-Ueno, Taito-ku, Tokyo",
     access: "JR Ueno Iriya Exit · about 5 minutes · 090-2510-9859",
     hours: "10:00–19:00 · Closed Tue & irregular holidays",
-    note: "Popular workshop — hammer a vintage or modern coin into a ring. Wide domestic and international coin wall, plus ready-made rings and accessories. Book ahead on LINE if you want a seat.",
+    note: "Booked Day 7 at 12:30 — hammer a vintage or modern coin into a ring (~60–90 min). Wide domestic and international coin wall, plus ready-made rings. Arrive a few minutes early.",
     tags: ["workshop", "rings", "souvenir"],
     days: [7],
     lat: 35.714,
