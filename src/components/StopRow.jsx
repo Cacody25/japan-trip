@@ -43,6 +43,16 @@ export default function StopRow({ stop }) {
         {stop.detail ? (
           <p className="mt-1.5 text-[12.5px] leading-relaxed text-muted-foreground md:text-[11.5px]">{stop.detail}</p>
         ) : null}
+        {stop.image ? (
+          <div className="mt-3 inline-block rounded-xl bg-white p-3">
+            <img
+              src={`${import.meta.env.BASE_URL}${String(stop.image).replace(/^\//, "")}`}
+              alt={stop.imageAlt || stop.title}
+              className="h-auto w-[168px] max-w-full"
+              decoding="async"
+            />
+          </div>
+        ) : null}
         {stop.items?.length ? (
           <ul className="mt-2.5 space-y-1.5">
             {stop.items.map((item) => (

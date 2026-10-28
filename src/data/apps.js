@@ -10,6 +10,7 @@ import {
   NotebookPen,
   Languages,
   Watch,
+  QrCode,
   Map as MapIcon,
 } from "lucide-react";
 
@@ -26,6 +27,12 @@ export const appIcons = [
     label: "Days",
     Icon: CalendarDays,
     color: "#E4573D",
+  },
+  {
+    to: "/entry",
+    label: "Entry",
+    Icon: QrCode,
+    color: "#2F6FED",
   },
   {
     to: "/food",
@@ -89,4 +96,6 @@ export const appIcons = [
   },
 ];
 
-export const dockApps = appIcons.filter((app) => app.to === "/map" || app.to === "/days" || app.to === "/poke" || app.to === "/halloween");
+export const dockApps = appIcons.filter(
+  (app) => app.to === "/map" || app.to === "/days" || app.to === "/entry" || app.to === "/poke",
+);

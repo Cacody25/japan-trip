@@ -14,7 +14,16 @@ export const days = [
     blurb: "Land, settle in, and keep the first night slow.",
     accent: "#E4573D",
     stops: [
-      { time: "5:00 PM", title: "Land in Tokyo", kind: "transit", detail: "Touch down and clear immigration." },
+      {
+        time: "Before landing",
+        title: "Visit Japan Web — entry QR",
+        kind: "note",
+        detail:
+          "Open Entry on the home screen (or scroll here) and turn brightness up. Show this QR at immigration, then again at customs after baggage.",
+        image: "visit-japan-web-qr.png",
+        imageAlt: "Visit Japan Web entry QR code",
+      },
+      { time: "5:00 PM", title: "Land in Tokyo", kind: "transit", detail: "Touch down and clear immigration with the Visit Japan Web QR." },
       {
         time: "If Narita",
         title: "Pokémon Store Narita Airport",
