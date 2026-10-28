@@ -12,6 +12,7 @@ import {
   Watch,
   QrCode,
   UtensilsCrossed,
+  HandHeart,
   Map as MapIcon,
 } from "lucide-react";
 
@@ -34,6 +35,12 @@ export const appIcons = [
     label: "Entry",
     Icon: QrCode,
     color: "#2F6FED",
+  },
+  {
+    to: "/intro",
+    label: "Intro!",
+    Icon: HandHeart,
+    color: "#C4708C",
   },
   {
     to: "/food",
